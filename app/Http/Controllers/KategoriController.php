@@ -12,11 +12,31 @@ class KategoriController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function getjson()
+    {
+        $kategori = Kategori::all();
+        $response = [
+            'success' => true,
+            'data' => $kategori,
+            'message' => 'berhasil'
+        ];
+        return response()->json($response, 200);
+    }
+
     public function index()
     {
         $kategori = Kategori::all();
+        return view('admin.kategori.index');
+    }
 
-        return view('admin.kategori.index', compact('kategori'));
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
     }
 
     /**
@@ -27,19 +47,41 @@ class KategoriController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'nama' => 'required|unique:kategoris'
-        ]);
+        $request->validate(['nama_kategori' => 'required|unique:kategoris']);
 
-        $cat = new Kategori;
+        $kategori = new Kategori;
+        $kategori->nama_kategori = $request->nama_kategori;
+        $kategori->slug = str_slug($request->nama_kategori,'-');
+        $kategori->save();
+        toastr()->success('Data berhasil ditambah!', "$kategori->nama_kategori");
+        $response = [
+            'success' => true,
+            'data' => $kategori,
+            'message' => 'berhasil'
+        ];
+        return response()->json($response, 200);
+    }
 
-        $cat->nama = $request->nama;
-        $cat->slug = str_slug($request->nama);
-        $cat->save();
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
+    }
 
-        toastr()->success('Data berhasil ditambah!', "$cat->name");
-
-        return redirect()->route('kategori.index');
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        //
     }
 
     /**
@@ -51,19 +93,7 @@ class KategoriController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $request->validate([
-            'nama' => 'required|unique:kategoris'
-        ]);
-
-        $cat = Kategori::findOrFail($request->id);
-
-        $cat->nama = $request->nama;
-        $cat->slug = str_slug($request->nama);
-        $cat->save();
-
-        toastr()->warning('Data berhasil diubah!', "$cat->nama");
-
-        return redirect()->route('kategori.index');
+        //
     }
 
     /**
@@ -72,14 +102,17 @@ class KategoriController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Request $request)
+    public function destroy($id)
     {
-        $cat = Kategori::findOrFail($request->id);
-        $old = $cat->nama;
-        $cat->delete();
-
-        toastr()->error('Data berhasil dihapus!', "$old");
-
-        return redirect()->route('kategori.index');
+        $kategori = Kategori::findOrFail($id);
+        $old = $kategori->nama_kategori;
+        $kategori->delete();
+        toastr()->error('Data Dihapus!', "$old");
+        $response = [
+            'success' => true,
+            'data' => $kategori,
+            'message' => 'berhasil'
+        ];
+        return response()->json($response, 200);
     }
 }

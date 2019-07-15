@@ -76,7 +76,7 @@
             @yield('content')
         </main>
     </div>
-    <script src="/assets/front/js/jquery-3.2.1.min.js"></script>
+    <script src="/assets/front/js/jquery/jquery-2.2.4.min.js"></script>
     <script src="{{ asset('js/app.js') }}"></script>
     @yield('js')
     @stack('scripts')

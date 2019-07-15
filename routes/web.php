@@ -14,26 +14,21 @@
 Route::get('/', function () {
     return view('front.index');
 });
-Route::get('/kategori', function () {
-    return view('front.category');
-});
 Route::get('/kontak', function () {
     return view('front.contact');
 });
 Route::get('/post', function () {
-    return view('front.post');
+    return view('front.single-post');
 });
-Route::get('/regular', function () {
-    return view('front.regular');
-});
-Route::resource('/produk', 'ProdukController');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+
+
 Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
-    Route::resource('/artikel', 'ArtikelController');
-    Route::resource('/kategori', 'KategoriController');
     Route::resource('/tag', 'TagController');
+    Route::resource('/kategori', 'KategoriController');
+    Route::resource('/artikel', 'ArtikelController');
 });

@@ -17,35 +17,92 @@
     <div class="card">
         <div class="card-body">
           <div class="table-responsive">
-            <table class="table table-striped" id="table-1">
+            <table class="table table-striped" id="datakategori">
               <thead>
                 <tr>
-                  <th class="text-center">
-                    #
-                  </th>
                   <th>Nama</th>
-                  <th>Action</th>
+                  <th>Slug</th>
+                  <th>Aksi</th>
                 </tr>
               </thead>
               <tbody>
-                @foreach($kategori as $data)
-                    <tr>
-                        <td class="text-center">
-                            {{ $loop->iteration }}
-                        </td>
-                        <td>{{ $data->nama }}</td>
-                        <td>
-                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#edit-cat" data-id="{{ $data->id }}" data-nama="{{ $data->nama }}">Edit</button>
-                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-cat" data-id="{{ $data->id }}" data-nama="{{ $data->nama }}">Delete</button>
-                        </td>
-                    </tr>
-                @endforeach
               </tbody>
             </table>
           </div>
         </div>
       </div>
 @endsection
+@push('scripts')
+    <script>
+    $(function () {
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+
+    // Get Data Siswa
+    $('#datakategori').dataTable({
+        dataType: "json",
+        ajax: "{{ route('json_kategori') }}",
+        responsive:true,
+        columns: [                
+                { data: 'nama_kategori', name: 'nama_kategori' },
+                { data: 'slug', name: 'slug' },
+                { data: 'id', render : function (id) {
+                    return `
+                            <a class="btn btn-danger btn-sm hapus-data-cat" data-id="${id}" style="color:white">Hapus</a>`;
+                    }
+                }
+            ]
+    });
+
+    // Simpan Data
+    $(".tombol-simpan-cat").click(function (simpan) {
+        simpan.preventDefault();
+        var nama_kategori = $("input[name=nama_kategori]").val()
+        // console.log(nama)
+        $.ajax({
+            url: "{{ route('kategori.store') }}",
+            method: "POST",
+            dataType: "json",
+            data: {
+                nama_kategori : nama_kategori,
+            },
+            success: function (berhasil) {
+                alert(berhasil.message)
+                location.reload();
+            },
+            error: function (gagal) {
+                console.log(gagal)
+            }
+        })
+    })
+
+    // Hapus Data
+    $("#datakategori").on('click', '.hapus-data-cat', function () {
+        var id = $(this).data("id");
+        // alert(id)
+        $.ajax({
+            url: '/admin/kategori/'+id,
+            method: "DELETE",
+            dataType: "json",
+            data: {
+                id: id
+            },
+            success: function (berhasil) {
+                alert(berhasil.message)
+                location.reload();
+            },
+            error: function (gagal) {
+                console.log(gagal)
+            }
+        })
+    })
+})
+
+    </script>
+@endpush
 
 @section('script')
     <script src="{{ asset('admin/assets/modules/jquery.min.js')}}"></script>

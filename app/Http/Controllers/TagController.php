@@ -12,11 +12,31 @@ class TagController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function getjson()
+    {
+        $tag = Tag::all();
+        $response = [
+            'success' => true,
+            'data' => $tag,
+            'message' => 'berhasil'
+        ];
+        return response()->json($response, 200);
+    }
+
     public function index()
     {
         $tag = Tag::all();
+        return view('admin.tag.index');
+    }
 
-        return view('admin.tag.index', compact('tag'));
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
     }
 
     /**
@@ -27,15 +47,41 @@ class TagController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate(['nama_tag' => 'required|unique:tags']);
+
         $tag = new Tag;
-
-        $tag->name = $request->nama;
-        $tag->slug = str_slug($request->nama);
+        $tag->nama_tag = $request->nama_tag;
+        $tag->slug = str_slug($request->nama_tag,'-');
         $tag->save();
+        toastr()->success('Data berhasil ditambah!', "$tag->nama_tag");
+        $response = [
+            'success' => true,
+            'data' => $tag,
+            'message' => 'berhasil'
+        ];
+        return response()->json($response, 200);
+    }
 
-        toastr()->success('Data berhasil ditambah!', "$tag->name");
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
+    }
 
-        return redirect()->route('tag.index');
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        //
     }
 
     /**
@@ -47,15 +93,19 @@ class TagController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $tag = Tag::findOrFail($request->id);
-
-        $tag->name = $request->nama;
-        $tag->slug = str_slug($request->nama);
+        $request->validate(['nama_tag' => 'required|unique:tags']);
+        
+        $tag = Tag::findOrFail($id);
+        $tag->nama_tag = $request->nama_tag;
+        $tag->slug = str_slug($request->nama_tag,'-');
         $tag->save();
-
-        toastr()->warning('Data berhasil diubah!', "$tag->name");
-
-        return redirect()->route('tag.index');
+        toastr()->success('Data berhasil ditambah!', "$tag->nama_tag");
+        $response = [
+            'success' => true,
+            'data' => $tag,
+            'message' => 'berhasil'
+        ];
+        return response()->json($response, 200);
     }
 
     /**
@@ -64,14 +114,17 @@ class TagController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Request $request)
+    public function destroy($id)
     {
-        $tag = Tag::findOrFail($request->id);
-        $old = $tag->name;
+        $tag = Tag::findOrFail($id);
+        $old = $tag->nama_tag;
         $tag->delete();
-
-        toastr()->error('Data berhasil dihapus!', "$old");
-
-        return redirect()->route('tag.index');
+        toastr()->error('Data Dihapus!', "$old");
+        $response = [
+            'success' => true,
+            'data' => $tag,
+            'message' => 'berhasil'
+        ];
+        return response()->json($response, 200);
     }
 }

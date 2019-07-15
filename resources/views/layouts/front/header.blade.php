@@ -1,58 +1,110 @@
-<header class="header">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<div class="header_content d-flex flex-row align-items-center justify-content-start">
-						<div class="logo"><a href="#">avision</a></div>
-						<nav class="main_nav">
-							<ul>
-								<li class="active"><a href="index.html">Home</a></li>
-								<li><a href="#">Fashion</a></li>
-								<li><a href="#">Gadgets</a></li>
-								<li><a href="#">Lifestyle</a></li>
-								<li><a href="#">Video</a></li>
-								<li><a href="contact.html">Contact</a></li>
-							</ul>
-						</nav>
-						<div class="search_container ml-auto">
-							<div class="weather">
-								<div class="temperature">+10°</div>
-								<img class="weather_icon" src="images/cloud.png" alt="">
-							</div>
-							<form action="#">
-								<input type="search" class="header_search_input" required="required" placeholder="Type to Search...">
-								<img class="header_search_icon" src="images/search.png" alt="">
-							</form>
-							
-						</div>
-						<div class="hamburger ml-auto menu_mm">
-							<i class="fa fa-bars trans_200 menu_mm" aria-hidden="true"></i>
-						</div>
+<header class="header-area">
+	<!-- Navbar Area -->
+	<div class="newsbox-main-menu">
+		<div class="classy-nav-container breakpoint-off">
+			<div class="container-fluid">
+				<!-- Menu -->
+				<nav class="classy-navbar justify-content-between" id="newsboxNav">
+
+					<!-- Nav brand -->
+					<a href="/" class="nav-brand"><img src="/assets/front/img/core-img/logo.png" alt=""></a>
+
+					<!-- Navbar Toggler -->
+					<div class="classy-navbar-toggler">
+						<span class="navbarToggler"><span></span><span></span><span></span></span>
 					</div>
-				</div>
+
+					<!-- Menu -->
+					<div class="classy-menu">
+
+						<!-- Close Button -->
+						<div class="classycloseIcon">
+							<div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+						</div>
+
+						<!-- Nav Start -->
+						<div class="classynav">
+							<ul>
+								{{-- <li><a href="#">International</a>
+									<div class="megamenu">
+										<ul class="single-mega cn-col-4">
+											<li class="title">Europe</li>
+											<li><a href="#">United Kingdom</a></li>
+											<li><a href="#">Germany</a></li>
+											<li><a href="#">Latvia</a></li>
+											<li><a href="#">Poland</a></li>
+											<li><a href="#">Italy</a></li>
+											<li><a href="#">France</a></li>
+											<li><a href="#">Crotia</a></li>
+										</ul>
+										<ul class="single-mega cn-col-4">
+											<li class="title">Africa</li>
+											<li><a href="#">Algeria</a></li>
+											<li><a href="#">Angola</a></li>
+											<li><a href="#">Benin</a></li>
+											<li><a href="#">Botswana</a></li>
+											<li><a href="#">Burkina Faso</a></li>
+											<li><a href="#">Burundi</a></li>
+											<li><a href="#">Cameroon</a></li>
+										</ul>
+										<ul class="single-mega cn-col-4">
+											<li class="title">Asia</li>
+											<li><a href="#">Bangladesh</a></li>
+											<li><a href="#">Chaina</a></li>
+											<li><a href="#">India</a></li>
+											<li><a href="#">Afganistan</a></li>
+											<li><a href="#">Sri Lanka</a></li>
+											<li><a href="#">Nepal</a></li>
+											<li><a href="#">Bhutan</a></li>
+										</ul>
+										<ul class="single-mega cn-col-4">
+											<li class="title">USA &amp; Canada</li>
+											<li><a href="#">California</a></li>
+											<li><a href="#">Florida</a></li>
+											<li><a href="#">Alabama</a></li>
+											<li><a href="#">New Yorks</a></li>
+											<li><a href="#">Texas</a></li>
+											<li><a href="#">Lowa</a></li>
+											<li><a href="#">Montana</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="#">Local News</a></li>
+								<li><a href="#">Pages</a>
+									<ul class="dropdown">
+										<li><a href="index.html">Home</a></li>
+										<li><a href="catagory.html">Catagory</a></li>
+										<li><a href="single-post.html">Single Post</a></li>
+										<li><a href="contact.html">Contact</a></li>
+										<li><a href="elements.html">Elements</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Sport</a>
+									<ul class="dropdown">
+										<li><a href="#">Archery</a></li>
+										<li><a href="#">Badminton</a></li>
+										<li><a href="#">Baseball</a></li>
+										<li><a href="#">Boxing</a></li>
+										<li><a href="#">Climbing</a></li>
+										<li><a href="#">Cricket</a></li>
+										<li><a href="#">Football</a></li>
+									</ul>
+								</li> --}}
+								<li><a href="/">Blog</a></li>
+							</ul>
+
+							<!-- Header Add Area -->
+							<div class="header-add-area">
+								<a href="#">
+								   <img src="" alt="">
+								</a>
+							</div>
+						</div>
+						<!-- Nav End -->
+
+					</div>
+				</nav>
 			</div>
 		</div>
-	</header>
-
-	<!-- Menu -->
-
-	<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
-		<div class="menu_close_container"><div class="menu_close"><div></div><div></div></div></div>
-		<div class="logo menu_mm"><a href="#">Avision</a></div>
-		<div class="search">
-			<form action="#">
-				<input type="search" class="header_search_input menu_mm" required="required" placeholder="Type to Search...">
-				<img class="header_search_icon menu_mm" src="images/search_2.png" alt="">
-			</form>
-		</div>
-		<nav class="menu_nav">
-			<ul class="menu_mm">
-				<li class="menu_mm"><a href="index.html">home</a></li>
-				<li class="menu_mm"><a href="#">Fashion</a></li>
-				<li class="menu_mm"><a href="#">Gadgets</a></li>
-				<li class="menu_mm"><a href="#">Lifestyle</a></li>
-				<li class="menu_mm"><a href="#">Video</a></li>
-				<li class="menu_mm"><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
 	</div>
+</header>

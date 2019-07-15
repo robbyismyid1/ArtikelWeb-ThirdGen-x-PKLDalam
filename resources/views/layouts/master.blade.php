@@ -11,14 +11,7 @@
     @yield('css')
 
     <!-- Start GA -->
-    <script async src="'https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-94034622-3');
-    </script>
+    
     <!-- /END GA --></head>
 <body>
     <div id="app">
@@ -37,7 +30,7 @@
                     <div class="section-header">
                     <h1>@yield('header')</h1>
                     @yield('button-add')
-                    <div class="section-header-breadcrumb">
+                    <div class="section -header-breadcrumb">
                         @yield('breadcrumb')
                     </div>
                     </div>
@@ -70,12 +63,13 @@
     </div>
 
     @yield('script')
+    
 
     {{-- JS Modal Tag --}}
     <script>
         $('#edit-tag').on('show.bs.modal', function (event) {
             var button = $(event.relatedTarget)
-            var name = button.data('nama')
+            var name = button.data('nama_tag')
             var id = button.data('id')
             // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
             // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
@@ -89,7 +83,7 @@
     <script>
         $('#delete-tag').on('show.bs.modal', function (event) {
             var button = $(event.relatedTarget)
-            var name = button.data('nama')
+            var name = button.data('nama_tag')
             var id = button.data('id')
             // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
             // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
@@ -104,7 +98,7 @@
     <script>
         $('#edit-cat').on('show.bs.modal', function (event) {
             var button = $(event.relatedTarget)
-            var name = button.data('nama')
+            var name = button.data('nama_kategori')
             var id = button.data('id')
             // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
             // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
@@ -118,7 +112,7 @@
     <script>
         $('#delete-cat').on('show.bs.modal', function (event) {
             var button = $(event.relatedTarget)
-            var name = button.data('nama')
+            var name = button.data('nama_kategori')
             var id = button.data('id')
             // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
             // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
@@ -129,7 +123,8 @@
             })
     </script>
 
-
+    @yield('js')
+    @stack('scripts')
     {{-- some hidden comment --}}
 </body>
 @toastr_js

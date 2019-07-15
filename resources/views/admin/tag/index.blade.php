@@ -28,29 +28,16 @@
                 </div>
             @endif
           <div class="table-responsive">
-            <table class="table table-striped" id="table-1">
+            <table class="table table-striped" id="datatag">
               <thead>
                 <tr>
-                  <th class="text-center">
-                    #
-                  </th>
                   <th>Nama</th>
-                  <th>Action</th>
+                  <th>Slug</th>
+                  <th>Aksi</th>
                 </tr>
               </thead>
               <tbody>
-                @foreach($tag as $data)
-                    <tr>
-                        <td class="text-center">
-                            {{ $loop->iteration }}
-                        </td>
-                        <td>{{ $data->name }}</td>
-                        <td>
-                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#edit-tag" data-id="{{ $data->id }}" data-nama="{{ $data->name }}">Edit</button>
-                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-tag" data-id="{{ $data->id }}" data-nama="{{ $data->name }}">Delete</button>
-                        </td>
-                    </tr>
-                @endforeach
+                    
               </tbody>
             </table>
           </div>
@@ -58,6 +45,77 @@
       </div>
 @endsection
 
+@push('scripts')
+    <script>
+    $(function () {
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+
+    // Get Data Siswa
+    $('#datatag').dataTable({
+        dataType: "json",
+        ajax: "{{ route('json_tag') }}",
+        responsive:true,
+        columns: [                
+                { data: 'nama_tag', name: 'nama_tag' },
+                { data: 'slug', name: 'slug' },
+                { data: 'id', render : function (id) {
+                    return `
+                            <a class="btn btn-danger btn-sm hapus-data" data-id="${id}" style="color:white">Hapus</a>`;
+                    }
+                }
+            ]
+    });
+
+    // Simpan Data
+    $(".tombol-simpan").click(function (simpan) {
+        simpan.preventDefault();
+        var nama_tag = $("input[name=nama_tag]").val()
+        // console.log(nama)
+        $.ajax({
+            url: "{{ route('tag.store') }}",
+            method: "POST",
+            dataType: "json",
+            data: {
+                nama_tag : nama_tag,
+            },
+            success: function (berhasil) {
+                alert(berhasil.message)
+                location.reload();
+            },
+            error: function (gagal) {
+                console.log(gagal)
+            }
+        })
+    })
+
+    // Hapus Data
+    $("#datatag").on('click', '.hapus-data', function () {
+        var id = $(this).data("id");
+        // alert(id)
+        $.ajax({
+            url: '/admin/tag/'+id,
+            method: "DELETE",
+            dataType: "json",
+            data: {
+                id: id
+            },
+            success: function (berhasil) {
+                alert(berhasil.message)
+                location.reload();
+            },
+            error: function (gagal) {
+                console.log(gagal)
+            }
+        })
+    })
+})
+
+    </script>
+@endpush
 @section('script')
     <script src="{{ asset('admin/assets/modules/jquery.min.js')}}"></script>
     <script src="{{ asset('admin/assets/modules/popper.js')}}"></script>

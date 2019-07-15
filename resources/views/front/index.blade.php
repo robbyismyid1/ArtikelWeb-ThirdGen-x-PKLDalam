@@ -1,1370 +1,605 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Avision</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Demo project">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="/assets/front/styles/bootstrap4/bootstrap.min.css">
-<link href="/assets/front/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="/assets/front/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="/assets/front/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-<link rel="stylesheet" type="text/css" href="/assets/front/plugins/OwlCarousel2-2.2.1/animate.css">
-<link rel="stylesheet" type="text/css" href="/assets/front/plugins/jquery.mb.YTPlayer-3.1.12/jquery.mb.YTPlayer.css">
-<link rel="stylesheet" type="text/css" href="/assets/front/styles/main_styles.css">
-<link rel="stylesheet" type="text/css" href="/assets/front/styles/responsive.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Newsbox - Modern Magazine &amp; Newspaper HTML Template</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/front/img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/assets/front/style.css">
+
 </head>
+
 <body>
-
-<div class="super_container">
-
-	<!-- Header -->
-	@include('layouts.front.header')
-	<!-- Home -->
-
-	<div class="home">
-		
-		<!-- Home Slider -->
-
-		<div class="home_slider_container">
-			<div class="owl-carousel owl-theme home_slider">
-				
-				<!-- Slider Item -->
-				<div class="owl-item">
-					<div class="home_slider_background" style="background-image:url(/assets/front/images/home_slider.jpg)"></div>
-					<div class="home_slider_content_container">
-						<div class="container">
-							<div class="row">
-								<div class="col">
-									<div class="home_slider_content">
-										<div class="home_slider_item_category trans_200"><a href="category.html" class="trans_200">sport</a></div>
-										<div class="home_slider_item_title">
-											<a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a>
-										</div>
-										<div class="home_slider_item_link">
-											<a href="post.html" class="trans_200">Continue Reading
-												<svg version="1.1" id="link_arrow_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-													 width="19px" height="13px" viewBox="0 0 19 13" enable-background="new 0 0 19 13" xml:space="preserve">
-													<polygon fill="#FFFFFF" points="12.475,0 11.061,0 17.081,6.021 0,6.021 0,7.021 17.038,7.021 11.06,13 12.474,13 18.974,6.5 "/>
-												</svg>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Similar Posts -->
-					<div class="similar_posts_container">
-						<div class="container">
-							<div class="row d-flex flex-row align-items-end">
-
-								<!-- Similar Post -->
-								<div class="col-lg-3 col-md-6 similar_post_col">
-									<div class="similar_post trans_200">
-										<a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a>
-									</div>
-								</div>
-
-								<!-- Similar Post -->
-								<div class="col-lg-3 col-md-6 similar_post_col">
-									<div class="similar_post trans_200">
-										<a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a>
-									</div>
-								</div>
-
-								<!-- Similar Post -->
-								<div class="col-lg-3 col-md-6 similar_post_col">
-									<div class="similar_post trans_200">
-										<a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a>
-									</div>
-								</div>
-
-							</div>
-						</div>
-						
-						<div class="home_slider_next_container">
-							<div class="home_slider_next" style="background-image:url(/assets/front/images/home_slider_next.jpg)">
-								<div class="home_slider_next_background trans_400"></div>
-								<div class="home_slider_next_content trans_400">
-									<div class="home_slider_next_title">next</div>
-									<div class="home_slider_next_link">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-
-				<!-- Slider Item -->
-				<div class="owl-item">
-					<div class="home_slider_background" style="background-image:url(/assets/front/images/home_slider.jpg)"></div>
-					<div class="home_slider_content_container">
-						<div class="container">
-							<div class="row">
-								<div class="col">
-									<div class="home_slider_content">
-										<div class="home_slider_item_category trans_200"><a href="category.html" class="trans_200">sport</a></div>
-										<div class="home_slider_item_title">
-											<a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a>
-										</div>
-										<div class="home_slider_item_link">
-											<a href="post.html" class="trans_200">Continue Reading
-												<svg version="1.1" id="link_arrow_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-													 width="19px" height="13px" viewBox="0 0 19 13" enable-background="new 0 0 19 13" xml:space="preserve">
-													<polygon fill="#FFFFFF" points="12.475,0 11.061,0 17.081,6.021 0,6.021 0,7.021 17.038,7.021 11.06,13 12.474,13 18.974,6.5 "/>
-												</svg>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Similar Posts -->
-					<div class="similar_posts_container">
-						<div class="container">
-							<div class="row d-flex flex-row align-items-end">
-
-								<!-- Similar Post -->
-								<div class="col-lg-3 col-md-6 similar_post_col">
-									<div class="similar_post trans_200">
-										<a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a>
-									</div>
-								</div>
-
-								<!-- Similar Post -->
-								<div class="col-lg-3 col-md-6 similar_post_col">
-									<div class="similar_post trans_200">
-										<a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a>
-									</div>
-								</div>
-
-								<!-- Similar Post -->
-								<div class="col-lg-3 col-md-6 similar_post_col">
-									<div class="similar_post trans_200">
-										<a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a>
-									</div>
-								</div>
-
-							</div>
-						</div>
-						
-						<div class="home_slider_next_container">
-							<div class="home_slider_next" style="background-image:url(/assets/front/images/home_slider_next.jpg)">
-								<div class="home_slider_next_background trans_400"></div>
-								<div class="home_slider_next_content trans_400">
-									<div class="home_slider_next_title">next</div>
-									<div class="home_slider_next_link">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-
-				<!-- Slider Item -->
-				<div class="owl-item">
-					<div class="home_slider_background" style="background-image:url(/assets/front/images/home_slider.jpg)"></div>
-					<div class="home_slider_content_container">
-						<div class="container">
-							<div class="row">
-								<div class="col">
-									<div class="home_slider_content">
-										<div class="home_slider_item_category trans_200"><a href="category.html" class="trans_200">sport</a></div>
-										<div class="home_slider_item_title">
-											<a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a>
-										</div>
-										<div class="home_slider_item_link">
-											<a href="post.html" class="trans_200">Continue Reading
-												<svg version="1.1" id="link_arrow_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-													 width="19px" height="13px" viewBox="0 0 19 13" enable-background="new 0 0 19 13" xml:space="preserve">
-													<polygon fill="#FFFFFF" points="12.475,0 11.061,0 17.081,6.021 0,6.021 0,7.021 17.038,7.021 11.06,13 12.474,13 18.974,6.5 "/>
-												</svg>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Similar Posts -->
-					<div class="similar_posts_container">
-						<div class="container">
-							<div class="row d-flex flex-row align-items-end">
-
-								<!-- Similar Post -->
-								<div class="col-lg-3 col-md-6 similar_post_col">
-									<div class="similar_post trans_200">
-										<a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a>
-									</div>
-								</div>
-
-								<!-- Similar Post -->
-								<div class="col-lg-3 col-md-6 similar_post_col">
-									<div class="similar_post trans_200">
-										<a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a>
-									</div>
-								</div>
-
-								<!-- Similar Post -->
-								<div class="col-lg-3 col-md-6 similar_post_col">
-									<div class="similar_post trans_200">
-										<a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a>
-									</div>
-								</div>
-
-							</div>
-						</div>
-						
-						<div class="home_slider_next_container">
-							<div class="home_slider_next" style="background-image:url(/assets/front/images/home_slider_next.jpg)">
-								<div class="home_slider_next_background trans_400"></div>
-								<div class="home_slider_next_content trans_400">
-									<div class="home_slider_next_title">next</div>
-									<div class="home_slider_next_link">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-
-			</div>
-
-			<div class="custom_nav_container home_slider_nav_container">
-				<div class="custom_prev custom_prev_home_slider">
-					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-						 width="7px" height="12px" viewBox="0 0 7 12" enable-background="new 0 0 7 12" xml:space="preserve">
-						<polyline fill="#FFFFFF" points="0,5.61 5.609,0 7,0 7,1.438 2.438,6 7,10.563 7,12 5.609,12 -0.002,6.39 "/>
-					</svg>
-				</div>
-		        <ul id="custom_dots" class="custom_dots custom_dots_home_slider">
-					<li class="custom_dot custom_dot_home_slider active"><span></span></li>
-					<li class="custom_dot custom_dot_home_slider"><span></span></li>
-					<li class="custom_dot custom_dot_home_slider"><span></span></li>
-				</ul>
-				<div class="custom_next custom_next_home_slider">
-					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-						 width="7px" height="12px" viewBox="0 0 7 12" enable-background="new 0 0 7 12" xml:space="preserve">
-						<polyline fill="#FFFFFF" points="6.998,6.39 1.389,12 -0.002,12 -0.002,10.562 4.561,6 -0.002,1.438 -0.002,0 1.389,0 7,5.61 "/>
-					</svg>
-				</div>
-			</div>
-
-		</div>
-	</div>
-	
-	<!-- Page Content -->
-
-	<div class="page_content">
-		<div class="container">
-			<div class="row row-lg-eq-height">
-
-				<!-- Main Content -->
-
-				<div class="col-lg-9">
-					<div class="main_content">
-
-						<!-- Blog Section - Don't Miss -->
-
-						<div class="blog_section">
-							<div class="section_panel d-flex flex-row align-items-center justify-content-start">
-								<div class="section_title">Don't Miss</div>
-								<div class="section_tags ml-auto">
-									<ul>
-										<li class="active"><a href="category.html">all</a></li>
-										<li><a href="category.html">style hunter</a></li>
-										<li><a href="category.html">vogue</a></li>
-										<li><a href="category.html">health & fitness</a></li>
-										<li><a href="category.html">travel</a></li>
-									</ul>
-								</div>
-								<div class="section_panel_more">
-									<ul>
-										<li>more
-											<ul>
-												<li><a href="category.html">new look 2018</a></li>
-												<li><a href="category.html">street fashion</a></li>
-												<li><a href="category.html">business</a></li>
-												<li><a href="category.html">recipes</a></li>
-												<li><a href="category.html">sport</a></li>
-												<li><a href="category.html">celebrities</a></li>
-											</ul>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="section_content">
-								<div class="grid clearfix">
-
-									<!-- Largest Card With Image -->
-									<div class="card card_largest_with_image grid-item">
-										<img class="card-img-top" src="/assets/front/images/post_1.jpg" alt="https://unsplash.com/@cjtagupa">
-										<div class="card-body">
-											<div class="card-title"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<p class="card-text">Pick the yellow peach that looks like a sunset with its red, orange, and pink coat skin, peel it off with your teeth. Sink them into unripened...</p>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
-										</div>
-									</div>
-
-									<!-- Small Card Without Image -->
-									<div class="card card_default card_small_no_image grid-item">
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
-										</div>
-									</div>
-
-									<!-- Small Card With Background -->
-									<div class="card card_default card_small_with_background grid-item">
-										<div class="card_background" style="background-image:url(/assets/front/images/post_4.jpg)"></div>
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
-										</div>
-									</div>
-
-									<!-- Small Card With Image -->
-									<div class="card card_small_with_image grid-item">
-										<img class="card-img-top" src="/assets/front/images/post_2.jpg" alt="https://unsplash.com/@jakobowens1">
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
-										</div>
-									</div>
-
-									<!-- Small Card With Image -->
-									<div class="card card_small_with_image grid-item">
-										<img class="card-img-top" src="/assets/front/images/post_3.jpg" alt="https://unsplash.com/@jannerboy62">
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
-										</div>
-									</div>
-
-									<!-- Default Card No Image -->
-
-									<div class="card card_default card_default_no_image grid-item">
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a></div>
-										</div>
-									</div>
-
-									<!-- Default Card No Image -->
-
-									<div class="card card_default card_default_no_image grid-item">
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a></div>
-										</div>
-									</div>
-
-									<!-- Default Card No Image -->
-
-									<div class="card card_default card_default_no_image grid-item">
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a></div>
-										</div>
-									</div>
-
-								</div>
-							</div>
-						</div>
-
-						<!-- Blog Section - What's Trending -->
-
-						<div class="blog_section">
-							<div class="section_panel d-flex flex-row align-items-center justify-content-start">
-								<div class="section_title">What's Trending</div>
-								<div class="section_tags ml-auto">
-									<ul>
-										<li class="active"><a href="category.html">all</a></li>
-										<li><a href="category.html">style hunter</a></li>
-										<li><a href="category.html">vogue</a></li>
-										<li><a href="category.html">health & fitness</a></li>
-										<li><a href="category.html">travel</a></li>
-									</ul>
-								</div>
-								<div class="section_panel_more">
-									<ul>
-										<li>more
-											<ul>
-												<li><a href="category.html">new look 2018</a></li>
-												<li><a href="category.html">street fashion</a></li>
-												<li><a href="category.html">business</a></li>
-												<li><a href="category.html">recipes</a></li>
-												<li><a href="category.html">sport</a></li>
-												<li><a href="category.html">celebrities</a></li>
-											</ul>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="section_content">
-								<div class="grid clearfix">
-									
-									<!-- Large Card With Background -->
-									<div class="card card_large_with_background grid-item">
-										<div class="card_background" style="background-image:url(/assets/front/images/post_8.jpg)"></div>
-										<div class="card-body">
-											<div class="card-title"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
-										</div>
-									</div>
-									
-									<!-- Large Card With Image -->
-									<div class="card grid-item card_large_with_image">
-										<img class="card-img-top" src="/assets/front/images/post_9.jpg" alt="">
-										<div class="card-body">
-											<div class="card-title"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<p class="card-text">Pick the yellow peach that looks like a sunset with its red, orange, and pink coat skin, peel it off with your teeth. Sink them into unripened...</p>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
-										</div>
-									</div>
-
-									<!-- Default Card With Image -->
-									<div class="card card_small_with_image grid-item">
-										<img class="card-img-top" src="/assets/front/images/post_5.jpg" alt="">
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
-										</div>
-									</div>
-									
-									<!-- Default Card With Background -->
-
-									<div class="card card_default card_default_with_background grid-item">
-										<div class="card_background" style="background-image:url(/assets/front/images/post_6.jpg)"></div>
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a></div>
-										</div>
-									</div>
-
-									<!-- Default Card No Image -->
-									<div class="card card_default card_default_no_image grid-item">
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a></div>
-										</div>
-									</div>
-
-									<!-- Default Card No Image -->
-									<div class="card card_default card_default_no_image grid-item">
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a></div>
-										</div>
-									</div>
-
-									<!-- Default Card With Background -->
-
-									<div class="card card_default card_default_with_background grid-item">
-										<div class="card_background" style="background-image:url(/assets/front/images/post_7.jpg)"></div>
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a></div>
-										</div>
-									</div>
-
-								</div>
-								
-							</div>
-						</div>
-
-						<!-- Blog Section - Videos -->
-
-						<div class="blog_section">
-							<div class="section_panel d-flex flex-row align-items-center justify-content-start">
-								<div class="section_title">Most Popular Videos</div>
-							</div>
-							<div class="section_content">
-								<div class="row">
-									<div class="col">
-										<div class="videos">
-											<div class="player_container">
-												<div id="P1" class="player" 
-												     data-property="{videoURL:'2ScS5kwm7nI',containment:'self',startAt:0,mute:false,autoPlay:false,loop:false,opacity:1}">
-												</div>
-											</div>
-											<div class="playlist">
-												<div class="playlist_background"></div>
-
-												<!-- Video -->
-												<div class="video_container video_command active" onclick="jQuery('#P1').YTPChangeVideo({videoURL: '2ScS5kwm7nI', mute:false, addRaster:true})">
-													<div class="video d-flex flex-row align-items-center justify-content-start">
-														<div class="video_image"><div><img src="/assets/front/images/video_1.jpg" alt=""></div><img class="play_img" src="/assets/front/images/play.png" alt=""></div>
-														<div class="video_content">
-															<div class="video_title">How Did van Gogh’s Turbulent Mind</div>
-															<div class="video_info"><span>1.2M views</span><span>Sep 29</span></div>
-														</div>
-													</div>
-												</div>
-
-												<!-- Video -->
-												<div class="video_container video_command" onclick="jQuery('#P1').YTPChangeVideo({videoURL: 'BzMLA8YIgG0', mute:false, addRaster:true})">
-													<div class="video d-flex flex-row align-items-center justify-content-start">
-														<div class="video_image"><div><img src="/assets/front/images/video_2.jpg" alt=""></div><img class="play_img" src="/assets/front/images/play.png" alt=""></div>
-														<div class="video_content">
-															<div class="video_title">How Did van Gogh’s Turbulent Mind</div>
-															<div class="video_info"><span>1.2M views</span><span>Sep 29</span></div>
-														</div>
-													</div>
-												</div>
-
-												<!-- Video -->
-												<div class="video_container video_command" onclick="jQuery('#P1').YTPChangeVideo({videoURL: 'bpbcSdqvtUQ', mute:false, addRaster:true})">
-													<div class="video d-flex flex-row align-items-center justify-content-start">
-														<div class="video_image"><div><img src="/assets/front/images/video_3.jpg" alt=""></div><img class="play_img" src="/assets/front/images/play.png" alt=""></div>
-														<div class="video_content">
-															<div class="video_title">How Did van Gogh’s Turbulent Mind</div>
-															<div class="video_info"><span>1.2M views</span><span>Sep 29</span></div>
-														</div>
-													</div>
-												</div>
-
-												<!-- Video -->
-												<div class="video_container video_command" onclick="jQuery('#P1').YTPChangeVideo({videoURL: 'UjYemgbhJF0', mute:false, addRaster:true})">
-													<div class="video d-flex flex-row align-items-center justify-content-start">
-														<div class="video_image"><div><img src="/assets/front/images/video_4.jpg" alt=""></div><img class="play_img" src="/assets/front/images/play.png" alt=""></div>
-														<div class="video_content">
-															<div class="video_title">How Did van Gogh’s Turbulent Mind</div>
-															<div class="video_info"><span>1.2M views</span><span>Sep 29</span></div>
-														</div>
-													</div>
-												</div>
-
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Blog Section - Latest -->
-
-						<div class="blog_section">
-							<div class="section_panel d-flex flex-row align-items-center justify-content-start">
-								<div class="section_title">Latest Articles</div>
-							</div>
-							<div class="section_content">
-								<div class="grid clearfix">
-									
-									<!-- Small Card With Image -->
-									<div class="card card_small_with_image grid-item">
-										<img class="card-img-top" src="/assets/front/images/post_10.jpg" alt="">
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
-										</div>
-									</div>
-
-									<!-- Small Card Without Image -->
-									<div class="card card_default card_small_no_image grid-item">
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
-										</div>
-									</div>
-
-									<!-- Small Card With Image -->
-									<div class="card card_small_with_image grid-item">
-										<img class="card-img-top" src="/assets/front/images/post_15.jpg" alt="">
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
-										</div>
-									</div>
-
-									<!-- Small Card With Image -->
-									<div class="card card_small_with_image grid-item">
-										<img class="card-img-top" src="/assets/front/images/post_13.jpg" alt="https://unsplash.com/@jakobowens1">
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
-										</div>
-									</div>
-
-									<!-- Small Card With Background -->
-									<div class="card card_default card_small_with_background grid-item">
-										<div class="card_background" style="background-image:url(/assets/front/images/post_11.jpg)"></div>
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
-										</div>
-									</div>
-
-									<!-- Small Card With Background -->
-									<div class="card card_default card_small_with_background grid-item">
-										<div class="card_background" style="background-image:url(/assets/front/images/post_16.jpg)"></div>
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
-										</div>
-									</div>
-
-									<!-- Small Card With Image -->
-									<div class="card card_small_with_image grid-item">
-										<img class="card-img-top" src="/assets/front/images/post_14.jpg" alt="">
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
-										</div>
-									</div>
-
-									<!-- Small Card Without Image -->
-									<div class="card card_default card_small_no_image grid-item">
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
-										</div>
-									</div>
-
-									<!-- Small Card Without Image -->
-									<div class="card card_default card_small_no_image grid-item">
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
-										</div>
-									</div>
-
-									<!-- Default Card With Background -->
-									<div class="card card_default card_default_with_background grid-item">
-										<div class="card_background" style="background-image:url(/assets/front/images/post_12.jpg)"></div>
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a></div>
-										</div>
-									</div>
-
-									<!-- Default Card With Background -->
-									<div class="card card_default card_default_with_background grid-item">
-										<div class="card_background" style="background-image:url(/assets/front/images/post_6.jpg)"></div>
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a></div>
-										</div>
-									</div>
-								</div>
-								
-							</div>
-						</div>
-
-					</div>
-					<div class="load_more">
-						<div id="load_more" class="load_more_button text-center trans_200">Load More</div>
-					</div>
-				</div>
-
-				<!-- Sidebar -->
-
-				<div class="col-lg-3">
-					<div class="sidebar">
-						<div class="sidebar_background"></div>
-
-						<!-- Top Stories -->
-
-						<div class="sidebar_section">
-							<div class="sidebar_title_container">
-								<div class="sidebar_title">Top Stories</div>
-								<div class="sidebar_slider_nav">
-									<div class="custom_nav_container sidebar_slider_nav_container">
-										<div class="custom_prev custom_prev_top">
-											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-												 width="7px" height="12px" viewBox="0 0 7 12" enable-background="new 0 0 7 12" xml:space="preserve">
-												<polyline fill="#bebebe" points="0,5.61 5.609,0 7,0 7,1.438 2.438,6 7,10.563 7,12 5.609,12 -0.002,6.39 "/>
-											</svg>
-										</div>
-								        <ul id="custom_dots" class="custom_dots custom_dots_top">
-											<li class="custom_dot custom_dot_top active"><span></span></li>
-											<li class="custom_dot custom_dot_top"><span></span></li>
-											<li class="custom_dot custom_dot_top"><span></span></li>
-										</ul>
-										<div class="custom_next custom_next_top">
-											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-												 width="7px" height="12px" viewBox="0 0 7 12" enable-background="new 0 0 7 12" xml:space="preserve">
-												<polyline fill="#bebebe" points="6.998,6.39 1.389,12 -0.002,12 -0.002,10.562 4.561,6 -0.002,1.438 -0.002,0 1.389,0 7,5.61 "/>
-											</svg>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="sidebar_section_content">
-
-								<!-- Top Stories Slider -->
-								<div class="sidebar_slider_container">
-									<div class="owl-carousel owl-theme sidebar_slider_top">
-
-										<!-- Top Stories Slider Item -->
-										<div class="owl-item">
-
-											<!-- Sidebar Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="/assets/front/images/top_1.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Sidebar Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="/assets/front/images/top_2.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Sidebar Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="/assets/front/images/top_3.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Sidebar Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="/assets/front/images/top_4.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-										</div>
-
-										<!-- Top Stories Slider Item -->
-										<div class="owl-item">
-
-											<!-- Sidebar Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="/assets/front/images/top_1.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Sidebar Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="/assets/front/images/top_2.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Sidebar Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="/assets/front/images/top_3.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Sidebar Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="/assets/front/images/top_4.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-										</div>
-
-										<!-- Top Stories Slider Item -->
-										<div class="owl-item">
-
-											<!-- Sidebar Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="/assets/front/images/top_1.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Sidebar Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="/assets/front/images/top_2.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Sidebar Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="/assets/front/images/top_3.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Sidebar Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="/assets/front/images/top_4.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-										</div>
-
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Advertising -->
-
-						<div class="sidebar_section">
-							<div class="advertising">
-								<div class="advertising_background" style="background-image:url(/assets/front/images/post_17.jpg)"></div>
-								<div class="advertising_content d-flex flex-column align-items-start justify-content-end">
-									<div class="advertising_perc">-15%</div>
-									<div class="advertising_link"><a href="#">How Did van Gogh’s Turbulent Mind</a></div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Newest Videos -->
-
-						<div class="sidebar_section newest_videos">
-							<div class="sidebar_title_container">
-								<div class="sidebar_title">Newest Videos</div>
-								<div class="sidebar_slider_nav">
-									<div class="custom_nav_container sidebar_slider_nav_container">
-										<div class="custom_prev custom_prev_vid">
-											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-												 width="7px" height="12px" viewBox="0 0 7 12" enable-background="new 0 0 7 12" xml:space="preserve">
-												<polyline fill="#bebebe" points="0,5.61 5.609,0 7,0 7,1.438 2.438,6 7,10.563 7,12 5.609,12 -0.002,6.39 "/>
-											</svg>
-										</div>
-								        <ul id="custom_dots" class="custom_dots custom_dots_vid">
-											<li class="custom_dot custom_dot_vid active"><span></span></li>
-											<li class="custom_dot custom_dot_vid"><span></span></li>
-											<li class="custom_dot custom_dot_vid"><span></span></li>
-										</ul>
-										<div class="custom_next custom_next_vid">
-											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-												 width="7px" height="12px" viewBox="0 0 7 12" enable-background="new 0 0 7 12" xml:space="preserve">
-												<polyline fill="#bebebe" points="6.998,6.39 1.389,12 -0.002,12 -0.002,10.562 4.561,6 -0.002,1.438 -0.002,0 1.389,0 7,5.61 "/>
-											</svg>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="sidebar_section_content">
-
-								<!-- Sidebar Slider -->
-								<div class="sidebar_slider_container">
-									<div class="owl-carousel owl-theme sidebar_slider_vid">
-
-										<!-- Newest Videos Slider Item -->
-										<div class="owl-item">
-
-											<!-- Newest Videos Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="/assets/front/images/vid_1.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Newest Videos Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="/assets/front/images/vid_2.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Newest Videos Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="/assets/front/images/vid_3.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Newest Videos Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="/assets/front/images/vid_4.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-										</div>
-
-										<!-- Newest Videos Slider Item -->
-										<div class="owl-item">
-
-											<!-- Newest Videos Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="/assets/front/images/vid_1.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Newest Videos Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="/assets/front/images/vid_2.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Newest Videos Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="/assets/front/images/vid_3.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Newest Videos Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="/assets/front/images/vid_4.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-										</div>
-
-										<!-- Newest Videos Slider Item -->
-										<div class="owl-item">
-
-											<!-- Newest Videos Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="/assets/front/images/vid_1.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Newest Videos Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="/assets/front/images/vid_2.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Newest Videos Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="/assets/front/images/vid_3.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Newest Videos Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="/assets/front/images/vid_4.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-										</div>
-
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Advertising 2 -->
-
-						<div class="sidebar_section">
-							<div class="advertising_2">
-								<div class="advertising_background" style="background-image:url(/assets/front/images/post_18.jpg)"></div>
-								<div class="advertising_2_content d-flex flex-column align-items-center justify-content-center">
-									<div class="advertising_2_link"><a href="#">Turbulent <span>Mind</span></a></div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Future Events -->
-
-						<div class="sidebar_section future_events">
-							<div class="sidebar_title_container">
-								<div class="sidebar_title">Future Events</div>
-								<div class="sidebar_slider_nav">
-									<div class="custom_nav_container sidebar_slider_nav_container">
-										<div class="custom_prev custom_prev_events">
-											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-												 width="7px" height="12px" viewBox="0 0 7 12" enable-background="new 0 0 7 12" xml:space="preserve">
-												<polyline fill="#bebebe" points="0,5.61 5.609,0 7,0 7,1.438 2.438,6 7,10.563 7,12 5.609,12 -0.002,6.39 "/>
-											</svg>
-										</div>
-								        <ul id="custom_dots" class="custom_dots custom_dots_events">
-											<li class="custom_dot custom_dot_events active"><span></span></li>
-											<li class="custom_dot custom_dot_events"><span></span></li>
-											<li class="custom_dot custom_dot_events"><span></span></li>
-										</ul>
-										<div class="custom_next custom_next_events">
-											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-												 width="7px" height="12px" viewBox="0 0 7 12" enable-background="new 0 0 7 12" xml:space="preserve">
-												<polyline fill="#bebebe" points="6.998,6.39 1.389,12 -0.002,12 -0.002,10.562 4.561,6 -0.002,1.438 -0.002,0 1.389,0 7,5.61 "/>
-											</svg>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="sidebar_section_content">
-
-								<!-- Sidebar Slider -->
-								<div class="sidebar_slider_container">
-									<div class="owl-carousel owl-theme sidebar_slider_events">
-
-										<!-- Future Events Slider Item -->
-										<div class="owl-item">
-
-											<!-- Future Events Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="event_date d-flex flex-column align-items-center justify-content-center">
-															<div class="event_day">13</div>
-															<div class="event_month">apr</div>
-														</div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Future Events Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="event_date d-flex flex-column align-items-center justify-content-center">
-															<div class="event_day">27</div>
-															<div class="event_month">apr</div>
-														</div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Future Events Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="event_date d-flex flex-column align-items-center justify-content-center">
-															<div class="event_day">02</div>
-															<div class="event_month">may</div>
-														</div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Future Events Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="event_date d-flex flex-column align-items-center justify-content-center">
-															<div class="event_day">09</div>
-															<div class="event_month">may</div>
-														</div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-										</div>
-
-										<!-- Future Events Slider Item -->
-										<div class="owl-item">
-
-											<!-- Future Events Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="event_date d-flex flex-column align-items-center justify-content-center">
-															<div class="event_day">13</div>
-															<div class="event_month">apr</div>
-														</div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Future Events Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="event_date d-flex flex-column align-items-center justify-content-center">
-															<div class="event_day">27</div>
-															<div class="event_month">apr</div>
-														</div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Future Events Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="event_date d-flex flex-column align-items-center justify-content-center">
-															<div class="event_day">02</div>
-															<div class="event_month">may</div>
-														</div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Future Events Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="event_date d-flex flex-column align-items-center justify-content-center">
-															<div class="event_day">09</div>
-															<div class="event_month">may</div>
-														</div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-										</div>
-
-										<!-- Future Events Slider Item -->
-										<div class="owl-item">
-
-											<!-- Future Events Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="event_date d-flex flex-column align-items-center justify-content-center">
-															<div class="event_day">13</div>
-															<div class="event_month">apr</div>
-														</div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Future Events Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="event_date d-flex flex-column align-items-center justify-content-center">
-															<div class="event_day">27</div>
-															<div class="event_month">apr</div>
-														</div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Future Events Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="event_date d-flex flex-column align-items-center justify-content-center">
-															<div class="event_day">02</div>
-															<div class="event_month">may</div>
-														</div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Future Events Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="event_date d-flex flex-column align-items-center justify-content-center">
-															<div class="event_day">09</div>
-															<div class="event_month">may</div>
-														</div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-										</div>
-
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
-
-	<!-- Footer -->
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    @include('layouts.front.header')
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Breaking News Area Start ##### -->
+    {{-- <section class="breaking-news-area clearfix">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Breaking News Widget -->
+                    <div class="breaking-news-ticker d-flex flex-wrap align-items-center">
+                        <div class="title">
+                            <h6>Trending</h6>
+                        </div>
+                        <div id="breakingNewsTicker" class="ticker">
+                            <ul>
+                                <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum.</a></li>
+                                <li><a href="#">Welcome to Colorlib Family.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> --}}
+    <!-- ##### Breaking News Area End ##### -->
+
+    <!-- ##### Catagory Featured Area Start ##### -->
+    <div class="catagory-featured-post bg-overlay clearfix" style="background-image: url(/assets/front/img/bg-img/23.jpg)">
+        <div class="container-fluid h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 col-lg-9">
+                    <!-- Post Content -->
+                    <div class="post-content">
+                        <p class="tag"><span>Entertainment</span></p>
+                        <a href="#" class="post-title">Top 10 <br>Summer Festivals</a>
+                        <p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Proin ac urna at lectus volutpat lobortis. Vestibulum venenatis iaculis diam vitae lobortis. Donec tincidunt viverra elit, sed consectetur est pr etium ac. Mauris nec mauris tellus. </p>
+                        <span class="post-date">June 20, 2018</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Catagory Featured Area End ##### -->
+
+    <!-- ##### Intro News Area Start ##### -->
+    <section class="intro-news-area section-padding-100-0 mb-70">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Intro News Tabs Area -->
+                <div class="col-12 col-lg-8">
+                    <div class="intro-news-tab">
+
+                        <!-- Intro News Filter -->
+                        <div class="intro-news-filter d-flex justify-content-between">
+                            <h6>All the news</h6>
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active" id="nav1" data-toggle="tab" href="#nav-1" role="tab" aria-controls="nav-1" aria-selected="true">Latest</a>
+                                    <a class="nav-item nav-link" id="nav2" data-toggle="tab" href="#nav-2" role="tab" aria-controls="nav-2" aria-selected="false">Popular</a>
+                                    <a class="nav-item nav-link" id="nav3" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-3" aria-selected="false">International</a>
+                                    <a class="nav-item nav-link" id="nav4" data-toggle="tab" href="#nav-4" role="tab" aria-controls="nav-4" aria-selected="false">Local</a>
+                                </div>
+                            </nav>
+                        </div>
+
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav1">
+                                <div class="row">
+                                    <!-- Single News Area -->
+                                    <div class="col-12">
+                                        <div class="single-blog-post style-2 mb-5">
+                                            <!-- Blog Thumbnail -->
+                                            <div class="blog-thumbnail">
+                                                <a href="#"><img src="/assets/front/img/bg-img/24.jpg" alt=""></a>
+                                            </div>
+
+                                            <!-- Blog Content -->
+                                            <div class="blog-content">
+                                                <span class="post-date">June 20, 2018</span>
+                                                <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
+                                                <a href="#" class="post-author mb-30">By Michael Smith</a>
+                                                <p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Proin ac urna at lectus volutpat lobortis. Vestibulum venenatis iaculis diam vitae lobortis. Donec tincidunt viverra elit, sed consectetur est pr etium ac. Mauris nec mauris tellus. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Single News Area -->
+                                    <div class="col-12 col-sm-6">
+                                        <div class="single-blog-post style-2 mb-5">
+                                            <!-- Blog Thumbnail -->
+                                            <div class="blog-thumbnail">
+                                                <a href="#"><img src="/assets/front/img/bg-img/14.jpg" alt=""></a>
+                                            </div>
+
+                                            <!-- Blog Content -->
+                                            <div class="blog-content">
+                                                <span class="post-date">June 20, 2018</span>
+                                                <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
+                                                <a href="#" class="post-author">By Michael Smith</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Single News Area -->
+                                    <div class="col-12 col-sm-6">
+                                        <div class="single-blog-post style-2 mb-5">
+                                            <!-- Blog Thumbnail -->
+                                            <div class="blog-thumbnail">
+                                                <a href="#"><img src="/assets/front/img/bg-img/15.jpg" alt=""></a>
+                                            </div>
+
+                                            <!-- Blog Content -->
+                                            <div class="blog-content">
+                                                <span class="post-date">June 20, 2018</span>
+                                                <a href="#" class="post-title">Rachel Sm ith breaks down while discussing border crisis</a>
+                                                <a href="#" class="post-author">By Michael Smith</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Single News Area -->
+                                    <div class="col-12 col-sm-6">
+                                        <div class="single-blog-post style-2 mb-5">
+                                            <!-- Blog Thumbnail -->
+                                            <div class="blog-thumbnail">
+                                                <a href="#"><img src="/assets/front/img/bg-img/4.jpg" alt=""></a>
+                                            </div>
+
+                                            <!-- Blog Content -->
+                                            <div class="blog-content">
+                                                <span class="post-date">June 20, 2018</span>
+                                                <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
+                                                <a href="#" class="post-author">By Michael Smith</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Single News Area -->
+                                    <div class="col-12 col-sm-6">
+                                        <div class="single-blog-post style-2 mb-5">
+                                            <!-- Blog Thumbnail -->
+                                            <div class="blog-thumbnail">
+                                                <a href="#"><img src="/assets/front/img/bg-img/5.jpg" alt=""></a>
+                                            </div>
+
+                                            <!-- Blog Content -->
+                                            <div class="blog-content">
+                                                <span class="post-date">June 20, 2018</span>
+                                                <a href="#" class="post-title">Rachel Sm ith breaks down while discussing border crisis</a>
+                                                <a href="#" class="post-author">By Michael Smith</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav2">
+                                <div class="row">
+                                    <!-- Single News Area -->
+                                    <div class="col-12">
+                                        <div class="single-blog-post style-2 mb-5">
+                                            <!-- Blog Thumbnail -->
+                                            <div class="blog-thumbnail">
+                                                <a href="#"><img src="/assets/front/img/bg-img/25.jpg" alt=""></a>
+                                            </div>
+
+                                            <!-- Blog Content -->
+                                            <div class="blog-content">
+                                                <span class="post-date">June 20, 2018</span>
+                                                <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
+                                                <a href="#" class="post-author mb-30">By Michael Smith</a>
+                                                <p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Proin ac urna at lectus volutpat lobortis. Vestibulum venenatis iaculis diam vitae lobortis. Donec tincidunt viverra elit, sed consectetur est pr etium ac. Mauris nec mauris tellus. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Single News Area -->
+                                    <div class="col-12 col-sm-6">
+                                        <div class="single-blog-post style-2 mb-5">
+                                            <!-- Blog Thumbnail -->
+                                            <div class="blog-thumbnail">
+                                                <a href="#"><img src="/assets/front/img/bg-img/14.jpg" alt=""></a>
+                                            </div>
+
+                                            <!-- Blog Content -->
+                                            <div class="blog-content">
+                                                <span class="post-date">June 20, 2018</span>
+                                                <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
+                                                <a href="#" class="post-author">By Michael Smith</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Single News Area -->
+                                    <div class="col-12 col-sm-6">
+                                        <div class="single-blog-post style-2 mb-5">
+                                            <!-- Blog Thumbnail -->
+                                            <div class="blog-thumbnail">
+                                                <a href="#"><img src="/assets/front/img/bg-img/15.jpg" alt=""></a>
+                                            </div>
+
+                                            <!-- Blog Content -->
+                                            <div class="blog-content">
+                                                <span class="post-date">June 20, 2018</span>
+                                                <a href="#" class="post-title">Rachel Sm ith breaks down while discussing border crisis</a>
+                                                <a href="#" class="post-author">By Michael Smith</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Single News Area -->
+                                    <div class="col-12 col-sm-6">
+                                        <div class="single-blog-post style-2 mb-5">
+                                            <!-- Blog Thumbnail -->
+                                            <div class="blog-thumbnail">
+                                                <a href="#"><img src="/assets/front/img/bg-img/4.jpg" alt=""></a>
+                                            </div>
+
+                                            <!-- Blog Content -->
+                                            <div class="blog-content">
+                                                <span class="post-date">June 20, 2018</span>
+                                                <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
+                                                <a href="#" class="post-author">By Michael Smith</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Single News Area -->
+                                    <div class="col-12 col-sm-6">
+                                        <div class="single-blog-post style-2 mb-5">
+                                            <!-- Blog Thumbnail -->
+                                            <div class="blog-thumbnail">
+                                                <a href="#"><img src="/assets/front/img/bg-img/5.jpg" alt=""></a>
+                                            </div>
+
+                                            <!-- Blog Content -->
+                                            <div class="blog-content">
+                                                <span class="post-date">June 20, 2018</span>
+                                                <a href="#" class="post-title">Rachel Sm ith breaks down while discussing border crisis</a>
+                                                <a href="#" class="post-author">By Michael Smith</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="nav-3" role="tabpanel" aria-labelledby="nav3">
+                                <div class="row">
+                                    <!-- Single News Area -->
+                                    <div class="col-12">
+                                        <div class="single-blog-post style-2 mb-5">
+                                            <!-- Blog Thumbnail -->
+                                            <div class="blog-thumbnail">
+                                                <a href="#"><img src="/assets/front/img/bg-img/26.jpg" alt=""></a>
+                                            </div>
+
+                                            <!-- Blog Content -->
+                                            <div class="blog-content">
+                                                <span class="post-date">June 20, 2018</span>
+                                                <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
+                                                <a href="#" class="post-author mb-30">By Michael Smith</a>
+                                                <p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Proin ac urna at lectus volutpat lobortis. Vestibulum venenatis iaculis diam vitae lobortis. Donec tincidunt viverra elit, sed consectetur est pr etium ac. Mauris nec mauris tellus. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Single News Area -->
+                                    <div class="col-12 col-sm-6">
+                                        <div class="single-blog-post style-2 mb-5">
+                                            <!-- Blog Thumbnail -->
+                                            <div class="blog-thumbnail">
+                                                <a href="#"><img src="/assets/front/img/bg-img/14.jpg" alt=""></a>
+                                            </div>
+
+                                            <!-- Blog Content -->
+                                            <div class="blog-content">
+                                                <span class="post-date">June 20, 2018</span>
+                                                <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
+                                                <a href="#" class="post-author">By Michael Smith</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Single News Area -->
+                                    <div class="col-12 col-sm-6">
+                                        <div class="single-blog-post style-2 mb-5">
+                                            <!-- Blog Thumbnail -->
+                                            <div class="blog-thumbnail">
+                                                <a href="#"><img src="/assets/front/img/bg-img/15.jpg" alt=""></a>
+                                            </div>
+
+                                            <!-- Blog Content -->
+                                            <div class="blog-content">
+                                                <span class="post-date">June 20, 2018</span>
+                                                <a href="#" class="post-title">Rachel Sm ith breaks down while discussing border crisis</a>
+                                                <a href="#" class="post-author">By Michael Smith</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Single News Area -->
+                                    <div class="col-12 col-sm-6">
+                                        <div class="single-blog-post style-2 mb-5">
+                                            <!-- Blog Thumbnail -->
+                                            <div class="blog-thumbnail">
+                                                <a href="#"><img src="/assets/front/img/bg-img/4.jpg" alt=""></a>
+                                            </div>
+
+                                            <!-- Blog Content -->
+                                            <div class="blog-content">
+                                                <span class="post-date">June 20, 2018</span>
+                                                <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
+                                                <a href="#" class="post-author">By Michael Smith</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Single News Area -->
+                                    <div class="col-12 col-sm-6">
+                                        <div class="single-blog-post style-2 mb-5">
+                                            <!-- Blog Thumbnail -->
+                                            <div class="blog-thumbnail">
+                                                <a href="#"><img src="/assets/front/img/bg-img/5.jpg" alt=""></a>
+                                            </div>
+
+                                            <!-- Blog Content -->
+                                            <div class="blog-content">
+                                                <span class="post-date">June 20, 2018</span>
+                                                <a href="#" class="post-title">Rachel Sm ith breaks down while discussing border crisis</a>
+                                                <a href="#" class="post-author">By Michael Smith</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="nav-4" role="tabpanel" aria-labelledby="nav4">
+                                <div class="row">
+                                    <!-- Single News Area -->
+                                    <div class="col-12">
+                                        <div class="single-blog-post style-2 mb-5">
+                                            <!-- Blog Thumbnail -->
+                                            <div class="blog-thumbnail">
+                                                <a href="#"><img src="/assets/front/img/bg-img/27.jpg" alt=""></a>
+                                            </div>
+
+                                            <!-- Blog Content -->
+                                            <div class="blog-content">
+                                                <span class="post-date">June 20, 2018</span>
+                                                <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
+                                                <a href="#" class="post-author mb-30">By Michael Smith</a>
+                                                <p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Proin ac urna at lectus volutpat lobortis. Vestibulum venenatis iaculis diam vitae lobortis. Donec tincidunt viverra elit, sed consectetur est pr etium ac. Mauris nec mauris tellus. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Single News Area -->
+                                    <div class="col-12 col-sm-6">
+                                        <div class="single-blog-post style-2 mb-5">
+                                            <!-- Blog Thumbnail -->
+                                            <div class="blog-thumbnail">
+                                                <a href="#"><img src="/assets/front/img/bg-img/14.jpg" alt=""></a>
+                                            </div>
+
+                                            <!-- Blog Content -->
+                                            <div class="blog-content">
+                                                <span class="post-date">June 20, 2018</span>
+                                                <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
+                                                <a href="#" class="post-author">By Michael Smith</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Single News Area -->
+                                    <div class="col-12 col-sm-6">
+                                        <div class="single-blog-post style-2 mb-5">
+                                            <!-- Blog Thumbnail -->
+                                            <div class="blog-thumbnail">
+                                                <a href="#"><img src="/assets/front/img/bg-img/15.jpg" alt=""></a>
+                                            </div>
+
+                                            <!-- Blog Content -->
+                                            <div class="blog-content">
+                                                <span class="post-date">June 20, 2018</span>
+                                                <a href="#" class="post-title">Rachel Sm ith breaks down while discussing border crisis</a>
+                                                <a href="#" class="post-author">By Michael Smith</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Single News Area -->
+                                    <div class="col-12 col-sm-6">
+                                        <div class="single-blog-post style-2 mb-5">
+                                            <!-- Blog Thumbnail -->
+                                            <div class="blog-thumbnail">
+                                                <a href="#"><img src="/assets/front/img/bg-img/4.jpg" alt=""></a>
+                                            </div>
+
+                                            <!-- Blog Content -->
+                                            <div class="blog-content">
+                                                <span class="post-date">June 20, 2018</span>
+                                                <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
+                                                <a href="#" class="post-author">By Michael Smith</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Single News Area -->
+                                    <div class="col-12 col-sm-6">
+                                        <div class="single-blog-post style-2 mb-5">
+                                            <!-- Blog Thumbnail -->
+                                            <div class="blog-thumbnail">
+                                                <a href="#"><img src="/assets/front/img/bg-img/5.jpg" alt=""></a>
+                                            </div>
+
+                                            <!-- Blog Content -->
+                                            <div class="blog-content">
+                                                <span class="post-date">June 20, 2018</span>
+                                                <a href="#" class="post-title">Rachel Sm ith breaks down while discussing border crisis</a>
+                                                <a href="#" class="post-author">By Michael Smith</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar Widget -->
+                @include('layouts.front.sidebar')
+            </div>
+        </div>
+    </section>
+    <!-- ##### Intro News Area End ##### -->
+
+    <!-- ##### Add Area Start ##### -->
+    {{-- <div class="big-add-area">
+        <div class="container-fluid">
+            <a href="#"><img src="/assets/front/img/bg-img/add4.png" alt=""></a>
+        </div>
+    </div> --}}
+    <!-- ##### Add Area End ##### -->
+
+    {{-- <!-- ##### News Area Start ##### -->
+    <div class="news-area section-padding-100-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8 col-lg-9">
+
+                    <!-- Single News Area -->
+                    <div class="single-blog-post d-flex flex-wrap style-5 mb-30">
+                        <!-- Blog Thumbnail -->
+                        <div class="blog-thumbnail">
+                            <a href="#"><img src="/assets/front/img/bg-img/28.jpg" alt=""></a>
+                        </div>
+
+                        <!-- Blog Content -->
+                        <div class="blog-content">
+                            <span class="post-date">June 20, 2018</span>
+                            <a href="#" class="post-title">Rachel Sm ith breaks down while discussing border crisis</a>
+                            <a href="#" class="post-author">By Michael Smith</a>
+                            <p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Proin ac urna at lectus.</p>
+                        </div>
+                    </div>
+
+                    <!-- Single News Area -->
+                    <div class="single-blog-post d-flex flex-wrap style-5 mb-30">
+                        <!-- Blog Thumbnail -->
+                        <div class="blog-thumbnail">
+                            <a href="#"><img src="/assets/front/img/bg-img/29.jpg" alt=""></a>
+                        </div>
+
+                        <!-- Blog Content -->
+                        <div class="blog-content">
+                            <span class="post-date">June 20, 2018</span>
+                            <a href="#" class="post-title">Romantic retreats: 11 resorts worth crossing the Pacific for</a>
+                            <a href="#" class="post-author">By Michael Smith</a>
+                            <p>Lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Proin ac urna at lectus volutpat lobortis.</p>
+                        </div>
+                    </div>
+
+                    <!-- Single News Area -->
+                    <div class="single-blog-post d-flex flex-wrap style-5 mb-30">
+                        <!-- Blog Thumbnail -->
+                        <div class="blog-thumbnail">
+                            <a href="#"><img src="/assets/front/img/bg-img/30.jpg" alt=""></a>
+                        </div>
+
+                        <!-- Blog Content -->
+                        <div class="blog-content">
+                            <span class="post-date">June 20, 2018</span>
+                            <a href="#" class="post-title">Europe will hit US products with tariffs starting Friday</a>
+                            <a href="#" class="post-author">By Michael Smith</a>
+                            <p>Lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Proin ac urna at lectus volutpat lobortis.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+
+                    <!-- Single News Area -->
+                    <div class="single-blog-post style-6 mb-30">
+                        <!-- Blog Thumbnail -->
+                        <div class="blog-thumbnail">
+                            <a href="#"><img src="/assets/front/img/bg-img/11.jpg" alt=""></a>
+                            <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                        </div>
+
+                        <!-- Blog Content -->
+                        <div class="blog-content">
+                            <span class="post-date">June 20, 2018</span>
+                            <p class="post-title">Viral Video</p>
+                        </div>
+                    </div>
+
+                    <!-- Single News Area -->
+                    <div class="single-blog-post style-6 mb-30">
+                        <!-- Blog Thumbnail -->
+                        <div class="blog-thumbnail">
+                            <a href="#"><img src="/assets/front/img/bg-img/12.jpg" alt=""></a>
+                            <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                        </div>
+
+                        <!-- Blog Content -->
+                        <div class="blog-content">
+                            <span class="post-date">June 20, 2018</span>
+                            <p class="post-title">Viral Video</p>
+                        </div>
+                    </div>
+
+                    <!-- Single News Area -->
+                    <div class="single-blog-post style-6 mb-30">
+                        <!-- Blog Thumbnail -->
+                        <div class="blog-thumbnail">
+                            <a href="#"><img src="/assets/front/img/bg-img/13.jpg" alt=""></a>
+                            <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                        </div>
+
+                        <!-- Blog Content -->
+                        <div class="blog-content">
+                            <span class="post-date">June 20, 2018</span>
+                            <p class="post-title">Viral Video</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div> --}}
+    <!-- ##### News Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
     @include('layouts.front.footer')
-</div>
-    <!-- Script -->
-    <script src="/assets/front/js/jquery-3.2.1.min.js"></script>
-    <script src="/assets/front/styles/bootstrap4/popper.js"></script>
-    <script src="/assets/front/styles/bootstrap4/bootstrap.min.js"></script>
-    <script src="/assets/front/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-    <script src="/assets/front/plugins/jquery.mb.YTPlayer-3.1.12/jquery.mb.YTPlayer.js"></script>
-    <script src="/assets/front/plugins/easing/easing.js"></script>
-    <script src="/assets/front/plugins/masonry/masonry.js"></script>
-    <script src="/assets/front/plugins/masonry/images_loaded.js"></script>
-    <script src="/assets/front/js/custom.js"></script>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="/assets/front/js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="/assets/front/js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="/assets/front/js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="/assets/front/js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="/assets/front/js/active.js"></script>
 </body>
+
 </html>
