@@ -48,7 +48,7 @@ return [
             'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST', 'db4free.net'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'prakerinrobbyt'),
+            'database' => env('DB_DATABASE', 'prakerinrobby'),
             'username' => env('DB_USERNAME', 'robbysismyid1'),
             'password' => env('DB_PASSWORD', 'sdf749re11'),
             'unix_socket' => env('DB_SOCKET', ''),
@@ -123,7 +123,7 @@ return [
 
         'options' => [
             'cluster' => env('REDIS_CLUSTER', 'predis'),
-            'prefix' => Str::slug(env('APP_NAME', 'laravel'), '_').'_database_',
+            'prefix' => Str::slug(env('APP_NAME', 'laravel'), '_') . '_database_',
         ],
 
         'default' => [
