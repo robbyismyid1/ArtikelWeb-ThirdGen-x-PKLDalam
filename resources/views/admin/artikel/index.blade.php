@@ -74,6 +74,7 @@ Artikel
                     </th>
                     <th>Judul</th>
                     <th>Kategori</th>
+                    <th>Thumbnail</th>
                     <th>Author</th>
                     <th>Created At</th>
                     <th>Tags</th>
@@ -98,6 +99,11 @@ Artikel
                         </td>
                         <td>
                             {{ $data->kategori->nama }}
+                        </td>
+                        <td>
+                            
+                                <img alt="image" src="/assets/img/artikel/{{ $data->foto }}" width="60px" data-toggle="title" title=""> <div class="d-inline-block ml-1"></div>
+                            
                         </td>
                         <td>
                             

@@ -14,8 +14,8 @@ class CreateKategorisTable extends Migration
     public function up()
     {
         Schema::create('kategoris', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('nama_kategori');
+            $table->increments('id');
+            $table->string('nama');
             $table->string('slug');
             $table->timestamps();
         });
@@ -31,3 +31,23 @@ class CreateKategorisTable extends Migration
         Schema::dropIfExists('kategoris');
     }
 }
+//     public function up()
+//     {
+//         Schema::create('kategoris', function (Blueprint $table) {
+//             $table->increments('id');
+//             $table->string('nama');
+//             $table->string('slug');
+//             $table->timestamps();
+//         });
+//     }
+
+//     /**
+//      * Reverse the migrations.
+//      *
+//      * @return void
+//      */
+//     public function down()
+//     {
+//         Schema::dropIfExists('kategoris');
+//     }
+// }

@@ -16,8 +16,11 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-
-Route::get('/tag', 'TagController@getjson')->name('json_tag');
-Route::get('/kategori', 'KategoriController@getjson')->name('json_kategori');
-Route::resource('/artikel', 'Api\ArtikelController');
-
+Route::group(
+    ['as' => 'api.', 'middleware' => ['cors']],
+    function () {
+        Route::get('/tag', 'TagController@getjson')->name('json_tag');
+        Route::get('/kategori', 'KategoriController@getjson')->name('json_kategori');
+        Route::resource('/artikel', 'Api\ArtikelController');
+    }
+);

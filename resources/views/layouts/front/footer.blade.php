@@ -15,9 +15,8 @@
             <div class="col-6 col-sm-4 col-md-3">
                 <h6 class="footer__title">Resources</h6>
                 <ul class="footer__list">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Pricing Plan</a></li>
-                    <li><a href="#">Help</a></li>
+                    <li><a href="about">About Us</a></li>
+                    <li><a href="faq">Help</a></li>
                 </ul>
             </div>
             <!-- end footer list -->

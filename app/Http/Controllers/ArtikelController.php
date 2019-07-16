@@ -27,7 +27,7 @@ class ArtikelController extends Controller
             $artikel = Artikel::where('judul', 'LIKE', "%$cari%")->paginate(5);
         }
 
-        return view('admin.artikel.index', compact('artikel', 'count')); 
+        return view('admin.artikel.index', compact('artikel', 'count'));
     }
 
     /**
@@ -69,8 +69,8 @@ class ArtikelController extends Controller
         # Foto
         if ($request->hasFile('foto')) {
             $file = $request->file('foto');
-            $path = public_path().'/assets/img/artikel/';
-            $filename = str_random(6).'_'.$file->getClientOriginalName();
+            $path = public_path() . '/assets/img/artikel/';
+            $filename = str_random(6) . '_' . $file->getClientOriginalName();
             $upload = $file->move($path, $filename);
             $artikel->foto = $filename;
         }
@@ -80,7 +80,6 @@ class ArtikelController extends Controller
         toastr()->success('Data artikel berhasil dismpan!');
 
         return redirect()->route('artikel.index');
-
     }
     /**
      * Display the specified resource.
@@ -138,13 +137,13 @@ class ArtikelController extends Controller
         # Foto
         if ($request->hasFile('foto')) {
             $file = $request->file('foto');
-            $path = public_path().'/assets/img/artikel/';
-            $filename = str_random(6).'_'.$file->getClientOriginalName();
+            $path = public_path() . '/assets/img/artikel/';
+            $filename = str_random(6) . '_' . $file->getClientOriginalName();
             $upload = $file->move($path, $filename);
 
-            if($artikel->foto){
+            if ($artikel->foto) {
                 $old_foto = $artikel->foto;
-                $filepath = public_path().'/assets/img/artikel/'.$artikel->foto;
+                $filepath = public_path() . '/assets/img/artikel/' . $artikel->foto;
                 try {
                     File::delete($filepath);
                 } catch (FileNotFoundException $e) {
@@ -159,7 +158,6 @@ class ArtikelController extends Controller
         toastr()->success('Data artikel berhasil diubah!');
 
         return redirect()->route('artikel.index');
-
     }
 
     /**
@@ -171,9 +169,9 @@ class ArtikelController extends Controller
     public function destroy($id)
     {
         $artikel = Artikel::findOrFail($id);
-        if($artikel->foto){
+        if ($artikel->foto) {
             $old_foto = $artikel->foto;
-            $filepath = public_path().'/assets/img/artikel/'.$artikel->foto;
+            $filepath = public_path() . '/assets/img/artikel/' . $artikel->foto;
             try {
                 File::delete($filepath);
             } catch (FileNotFoundException $e) {
@@ -187,6 +185,5 @@ class ArtikelController extends Controller
         toastr()->error('Data artikel berhasil dihapus!');
 
         return redirect()->route('artikel.index');
-
     }
 }
