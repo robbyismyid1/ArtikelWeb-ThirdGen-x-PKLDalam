@@ -14,11 +14,17 @@
 Route::get('/', function () {
     return view('front.index');
 });
-Route::get('/kontak', function () {
-    return view('front.contact');
+Route::get('/about', function () {
+    return view('front.about');
 });
-Route::get('/post', function () {
-    return view('front.single-post');
+Route::get('/faq', function () {
+    return view('front.faq');
+});
+Route::get('/detail', function () {
+    return view('front.details1');
+});
+Route::get('/catalog', function () {
+    return view('front.catalog2');
 });
 
 Auth::routes();

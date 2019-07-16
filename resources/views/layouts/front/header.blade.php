@@ -1,110 +1,75 @@
-<header class="header-area">
-	<!-- Navbar Area -->
-	<div class="newsbox-main-menu">
-		<div class="classy-nav-container breakpoint-off">
-			<div class="container-fluid">
-				<!-- Menu -->
-				<nav class="classy-navbar justify-content-between" id="newsboxNav">
+<header class="header">
+    <div class="header__wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header__content">
+                        <!-- header logo -->
+                        <a href="/" class="header__logo">
+                            <img src="/assets/front/img/logo.svg" alt="">
+                        </a>
+                        <!-- end header logo -->
 
-					<!-- Nav brand -->
-					<a href="/" class="nav-brand"><img src="/assets/front/img/core-img/logo.png" alt=""></a>
+                        <!-- header nav -->
+                        <ul class="header__nav">
+                            <!-- dropdown -->
+                            <li class="header__nav-item">
+                                <a href="/" class="header__nav-link">Home</a>
+                            </li>
+                            <!-- end dropdown -->
 
-					<!-- Navbar Toggler -->
-					<div class="classy-navbar-toggler">
-						<span class="navbarToggler"><span></span><span></span><span></span></span>
-					</div>
+                            <!-- dropdown -->
+                            <li class="header__nav-item">
+                                <a href="catalog" class="header__nav-link">Catalog</a>
+                            </li>
+                            <!-- end dropdown -->   
 
-					<!-- Menu -->
-					<div class="classy-menu">
+                            <li class="header__nav-item">
+                                <a href="faq" class="header__nav-link">Help</a>
+                            </li>
 
-						<!-- Close Button -->
-						<div class="classycloseIcon">
-							<div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-						</div>
+                            <!-- dropdown -->
+                            <li class="header__nav-item">
+                                <a href="about" class="header__nav-link">About</a>
+                            </li>
+                            <!-- end dropdown -->
+                        </ul>
+                        <!-- end header nav -->
 
-						<!-- Nav Start -->
-						<div class="classynav">
-							<ul>
-								{{-- <li><a href="#">International</a>
-									<div class="megamenu">
-										<ul class="single-mega cn-col-4">
-											<li class="title">Europe</li>
-											<li><a href="#">United Kingdom</a></li>
-											<li><a href="#">Germany</a></li>
-											<li><a href="#">Latvia</a></li>
-											<li><a href="#">Poland</a></li>
-											<li><a href="#">Italy</a></li>
-											<li><a href="#">France</a></li>
-											<li><a href="#">Crotia</a></li>
-										</ul>
-										<ul class="single-mega cn-col-4">
-											<li class="title">Africa</li>
-											<li><a href="#">Algeria</a></li>
-											<li><a href="#">Angola</a></li>
-											<li><a href="#">Benin</a></li>
-											<li><a href="#">Botswana</a></li>
-											<li><a href="#">Burkina Faso</a></li>
-											<li><a href="#">Burundi</a></li>
-											<li><a href="#">Cameroon</a></li>
-										</ul>
-										<ul class="single-mega cn-col-4">
-											<li class="title">Asia</li>
-											<li><a href="#">Bangladesh</a></li>
-											<li><a href="#">Chaina</a></li>
-											<li><a href="#">India</a></li>
-											<li><a href="#">Afganistan</a></li>
-											<li><a href="#">Sri Lanka</a></li>
-											<li><a href="#">Nepal</a></li>
-											<li><a href="#">Bhutan</a></li>
-										</ul>
-										<ul class="single-mega cn-col-4">
-											<li class="title">USA &amp; Canada</li>
-											<li><a href="#">California</a></li>
-											<li><a href="#">Florida</a></li>
-											<li><a href="#">Alabama</a></li>
-											<li><a href="#">New Yorks</a></li>
-											<li><a href="#">Texas</a></li>
-											<li><a href="#">Lowa</a></li>
-											<li><a href="#">Montana</a></li>
-										</ul>
-									</div>
-								</li>
-								<li><a href="#">Local News</a></li>
-								<li><a href="#">Pages</a>
-									<ul class="dropdown">
-										<li><a href="index.html">Home</a></li>
-										<li><a href="catagory.html">Catagory</a></li>
-										<li><a href="single-post.html">Single Post</a></li>
-										<li><a href="contact.html">Contact</a></li>
-										<li><a href="elements.html">Elements</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Sport</a>
-									<ul class="dropdown">
-										<li><a href="#">Archery</a></li>
-										<li><a href="#">Badminton</a></li>
-										<li><a href="#">Baseball</a></li>
-										<li><a href="#">Boxing</a></li>
-										<li><a href="#">Climbing</a></li>
-										<li><a href="#">Cricket</a></li>
-										<li><a href="#">Football</a></li>
-									</ul>
-								</li> --}}
-								<li><a href="/">Blog</a></li>
-							</ul>
+                        <!-- header auth -->
+                        <div class="header__auth">
+                            <button class="header__search-btn" type="button">
+                                <i class="icon ion-ios-search"></i>
+                            </button>
+                        </div>
+                        <!-- end header auth -->
 
-							<!-- Header Add Area -->
-							<div class="header-add-area">
-								<a href="#">
-								   <img src="" alt="">
-								</a>
-							</div>
-						</div>
-						<!-- Nav End -->
+                        <!-- header menu btn -->
+                        <button class="header__btn" type="button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <!-- end header menu btn -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-					</div>
-				</nav>
-			</div>
-		</div>
-	</div>
+    <!-- header search -->
+    <form action="#" class="header__search">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header__search-content">
+                        <input type="text" placeholder="Search for a movie, TV Series that you are looking for">
+
+                        <button type="button">search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- end header search -->
 </header>

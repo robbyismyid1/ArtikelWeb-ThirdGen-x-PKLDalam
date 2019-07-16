@@ -2,604 +2,1459 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Title -->
-    <title>Newsbox - Modern Magazine &amp; Newspaper HTML Template</title>
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CUbuntu:300,400,500,700" rel="stylesheet">
 
-    <!-- Favicon -->
-    <link rel="icon" href="/assets/front/img/core-img/favicon.ico">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/front/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="/assets/front/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="/assets/front/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="/assets/front/css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="/assets/front/css/nouislider.min.css">
+	<link rel="stylesheet" href="/assets/front/css/ionicons.min.css">
+	<link rel="stylesheet" href="/assets/front/css/plyr.css">
+	<link rel="stylesheet" href="/assets/front/css/photoswipe.css">
+	<link rel="stylesheet" href="/assets/front/css/default-skin.css">
+	<link rel="stylesheet" href="/assets/front/css/main.css">
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="/assets/front/style.css">
+	<!-- Favicons -->
+	<link rel="icon" type="image/png" href="/assets/front/icon/favicon-32x32.png" sizes="32x32">
+	<link rel="apple-touch-icon" href="/assets/front/icon/favicon-32x32.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/front/icon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/front/icon/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/front/icon/apple-touch-icon-144x144.png">
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Dmitry Volkov">
+	<title>FlixGo – Online Movies, TV Shows & Cinema HTML Template</title>
 
 </head>
-
-<body>
-    <!-- Preloader -->
-    <div class="preloader d-flex align-items-center justify-content-center">
-        <div class="lds-ellipsis">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-
-    <!-- ##### Header Area Start ##### -->
-    @include('layouts.front.header')
-    <!-- ##### Header Area End ##### -->
-
-    <!-- ##### Breaking News Area Start ##### -->
-    {{-- <section class="breaking-news-area clearfix">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Breaking News Widget -->
-                    <div class="breaking-news-ticker d-flex flex-wrap align-items-center">
-                        <div class="title">
-                            <h6>Trending</h6>
-                        </div>
-                        <div id="breakingNewsTicker" class="ticker">
-                            <ul>
-                                <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum.</a></li>
-                                <li><a href="#">Welcome to Colorlib Family.</a></li>
-                                <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-    <!-- ##### Breaking News Area End ##### -->
-
-    <!-- ##### Catagory Featured Area Start ##### -->
-    <div class="catagory-featured-post bg-overlay clearfix" style="background-image: url(/assets/front/img/bg-img/23.jpg)">
-        <div class="container-fluid h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-12 col-lg-9">
-                    <!-- Post Content -->
-                    <div class="post-content">
-                        <p class="tag"><span>Entertainment</span></p>
-                        <a href="#" class="post-title">Top 10 <br>Summer Festivals</a>
-                        <p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Proin ac urna at lectus volutpat lobortis. Vestibulum venenatis iaculis diam vitae lobortis. Donec tincidunt viverra elit, sed consectetur est pr etium ac. Mauris nec mauris tellus. </p>
-                        <span class="post-date">June 20, 2018</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ##### Catagory Featured Area End ##### -->
-
-    <!-- ##### Intro News Area Start ##### -->
-    <section class="intro-news-area section-padding-100-0 mb-70">
-        <div class="container">
-            <div class="row justify-content-center">
-                <!-- Intro News Tabs Area -->
-                <div class="col-12 col-lg-8">
-                    <div class="intro-news-tab">
-
-                        <!-- Intro News Filter -->
-                        <div class="intro-news-filter d-flex justify-content-between">
-                            <h6>All the news</h6>
-                            <nav>
-                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                    <a class="nav-item nav-link active" id="nav1" data-toggle="tab" href="#nav-1" role="tab" aria-controls="nav-1" aria-selected="true">Latest</a>
-                                    <a class="nav-item nav-link" id="nav2" data-toggle="tab" href="#nav-2" role="tab" aria-controls="nav-2" aria-selected="false">Popular</a>
-                                    <a class="nav-item nav-link" id="nav3" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-3" aria-selected="false">International</a>
-                                    <a class="nav-item nav-link" id="nav4" data-toggle="tab" href="#nav-4" role="tab" aria-controls="nav-4" aria-selected="false">Local</a>
-                                </div>
-                            </nav>
-                        </div>
-
-                        <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav1">
-                                <div class="row">
-                                    <!-- Single News Area -->
-                                    <div class="col-12">
-                                        <div class="single-blog-post style-2 mb-5">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="/assets/front/img/bg-img/24.jpg" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
-                                                <a href="#" class="post-author mb-30">By Michael Smith</a>
-                                                <p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Proin ac urna at lectus volutpat lobortis. Vestibulum venenatis iaculis diam vitae lobortis. Donec tincidunt viverra elit, sed consectetur est pr etium ac. Mauris nec mauris tellus. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post style-2 mb-5">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="/assets/front/img/bg-img/14.jpg" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
-                                                <a href="#" class="post-author">By Michael Smith</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post style-2 mb-5">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="/assets/front/img/bg-img/15.jpg" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Rachel Sm ith breaks down while discussing border crisis</a>
-                                                <a href="#" class="post-author">By Michael Smith</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post style-2 mb-5">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="/assets/front/img/bg-img/4.jpg" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
-                                                <a href="#" class="post-author">By Michael Smith</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post style-2 mb-5">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="/assets/front/img/bg-img/5.jpg" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Rachel Sm ith breaks down while discussing border crisis</a>
-                                                <a href="#" class="post-author">By Michael Smith</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav2">
-                                <div class="row">
-                                    <!-- Single News Area -->
-                                    <div class="col-12">
-                                        <div class="single-blog-post style-2 mb-5">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="/assets/front/img/bg-img/25.jpg" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
-                                                <a href="#" class="post-author mb-30">By Michael Smith</a>
-                                                <p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Proin ac urna at lectus volutpat lobortis. Vestibulum venenatis iaculis diam vitae lobortis. Donec tincidunt viverra elit, sed consectetur est pr etium ac. Mauris nec mauris tellus. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post style-2 mb-5">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="/assets/front/img/bg-img/14.jpg" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
-                                                <a href="#" class="post-author">By Michael Smith</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post style-2 mb-5">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="/assets/front/img/bg-img/15.jpg" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Rachel Sm ith breaks down while discussing border crisis</a>
-                                                <a href="#" class="post-author">By Michael Smith</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post style-2 mb-5">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="/assets/front/img/bg-img/4.jpg" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
-                                                <a href="#" class="post-author">By Michael Smith</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post style-2 mb-5">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="/assets/front/img/bg-img/5.jpg" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Rachel Sm ith breaks down while discussing border crisis</a>
-                                                <a href="#" class="post-author">By Michael Smith</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tab-pane fade" id="nav-3" role="tabpanel" aria-labelledby="nav3">
-                                <div class="row">
-                                    <!-- Single News Area -->
-                                    <div class="col-12">
-                                        <div class="single-blog-post style-2 mb-5">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="/assets/front/img/bg-img/26.jpg" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
-                                                <a href="#" class="post-author mb-30">By Michael Smith</a>
-                                                <p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Proin ac urna at lectus volutpat lobortis. Vestibulum venenatis iaculis diam vitae lobortis. Donec tincidunt viverra elit, sed consectetur est pr etium ac. Mauris nec mauris tellus. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post style-2 mb-5">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="/assets/front/img/bg-img/14.jpg" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
-                                                <a href="#" class="post-author">By Michael Smith</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post style-2 mb-5">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="/assets/front/img/bg-img/15.jpg" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Rachel Sm ith breaks down while discussing border crisis</a>
-                                                <a href="#" class="post-author">By Michael Smith</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post style-2 mb-5">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="/assets/front/img/bg-img/4.jpg" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
-                                                <a href="#" class="post-author">By Michael Smith</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post style-2 mb-5">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="/assets/front/img/bg-img/5.jpg" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Rachel Sm ith breaks down while discussing border crisis</a>
-                                                <a href="#" class="post-author">By Michael Smith</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tab-pane fade" id="nav-4" role="tabpanel" aria-labelledby="nav4">
-                                <div class="row">
-                                    <!-- Single News Area -->
-                                    <div class="col-12">
-                                        <div class="single-blog-post style-2 mb-5">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="/assets/front/img/bg-img/27.jpg" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
-                                                <a href="#" class="post-author mb-30">By Michael Smith</a>
-                                                <p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Proin ac urna at lectus volutpat lobortis. Vestibulum venenatis iaculis diam vitae lobortis. Donec tincidunt viverra elit, sed consectetur est pr etium ac. Mauris nec mauris tellus. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post style-2 mb-5">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="/assets/front/img/bg-img/14.jpg" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
-                                                <a href="#" class="post-author">By Michael Smith</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post style-2 mb-5">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="/assets/front/img/bg-img/15.jpg" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Rachel Sm ith breaks down while discussing border crisis</a>
-                                                <a href="#" class="post-author">By Michael Smith</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post style-2 mb-5">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="/assets/front/img/bg-img/4.jpg" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
-                                                <a href="#" class="post-author">By Michael Smith</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post style-2 mb-5">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="/assets/front/img/bg-img/5.jpg" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Rachel Sm ith breaks down while discussing border crisis</a>
-                                                <a href="#" class="post-author">By Michael Smith</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sidebar Widget -->
-                @include('layouts.front.sidebar')
-            </div>
-        </div>
-    </section>
-    <!-- ##### Intro News Area End ##### -->
-
-    <!-- ##### Add Area Start ##### -->
-    {{-- <div class="big-add-area">
-        <div class="container-fluid">
-            <a href="#"><img src="/assets/front/img/bg-img/add4.png" alt=""></a>
-        </div>
-    </div> --}}
-    <!-- ##### Add Area End ##### -->
-
-    {{-- <!-- ##### News Area Start ##### -->
-    <div class="news-area section-padding-100-70">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-8 col-lg-9">
-
-                    <!-- Single News Area -->
-                    <div class="single-blog-post d-flex flex-wrap style-5 mb-30">
-                        <!-- Blog Thumbnail -->
-                        <div class="blog-thumbnail">
-                            <a href="#"><img src="/assets/front/img/bg-img/28.jpg" alt=""></a>
-                        </div>
-
-                        <!-- Blog Content -->
-                        <div class="blog-content">
-                            <span class="post-date">June 20, 2018</span>
-                            <a href="#" class="post-title">Rachel Sm ith breaks down while discussing border crisis</a>
-                            <a href="#" class="post-author">By Michael Smith</a>
-                            <p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Proin ac urna at lectus.</p>
-                        </div>
-                    </div>
-
-                    <!-- Single News Area -->
-                    <div class="single-blog-post d-flex flex-wrap style-5 mb-30">
-                        <!-- Blog Thumbnail -->
-                        <div class="blog-thumbnail">
-                            <a href="#"><img src="/assets/front/img/bg-img/29.jpg" alt=""></a>
-                        </div>
-
-                        <!-- Blog Content -->
-                        <div class="blog-content">
-                            <span class="post-date">June 20, 2018</span>
-                            <a href="#" class="post-title">Romantic retreats: 11 resorts worth crossing the Pacific for</a>
-                            <a href="#" class="post-author">By Michael Smith</a>
-                            <p>Lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Proin ac urna at lectus volutpat lobortis.</p>
-                        </div>
-                    </div>
-
-                    <!-- Single News Area -->
-                    <div class="single-blog-post d-flex flex-wrap style-5 mb-30">
-                        <!-- Blog Thumbnail -->
-                        <div class="blog-thumbnail">
-                            <a href="#"><img src="/assets/front/img/bg-img/30.jpg" alt=""></a>
-                        </div>
-
-                        <!-- Blog Content -->
-                        <div class="blog-content">
-                            <span class="post-date">June 20, 2018</span>
-                            <a href="#" class="post-title">Europe will hit US products with tariffs starting Friday</a>
-                            <a href="#" class="post-author">By Michael Smith</a>
-                            <p>Lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Proin ac urna at lectus volutpat lobortis.</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-12 col-md-4 col-lg-3">
-
-                    <!-- Single News Area -->
-                    <div class="single-blog-post style-6 mb-30">
-                        <!-- Blog Thumbnail -->
-                        <div class="blog-thumbnail">
-                            <a href="#"><img src="/assets/front/img/bg-img/11.jpg" alt=""></a>
-                            <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-                        </div>
-
-                        <!-- Blog Content -->
-                        <div class="blog-content">
-                            <span class="post-date">June 20, 2018</span>
-                            <p class="post-title">Viral Video</p>
-                        </div>
-                    </div>
-
-                    <!-- Single News Area -->
-                    <div class="single-blog-post style-6 mb-30">
-                        <!-- Blog Thumbnail -->
-                        <div class="blog-thumbnail">
-                            <a href="#"><img src="/assets/front/img/bg-img/12.jpg" alt=""></a>
-                            <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-                        </div>
-
-                        <!-- Blog Content -->
-                        <div class="blog-content">
-                            <span class="post-date">June 20, 2018</span>
-                            <p class="post-title">Viral Video</p>
-                        </div>
-                    </div>
-
-                    <!-- Single News Area -->
-                    <div class="single-blog-post style-6 mb-30">
-                        <!-- Blog Thumbnail -->
-                        <div class="blog-thumbnail">
-                            <a href="#"><img src="/assets/front/img/bg-img/13.jpg" alt=""></a>
-                            <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-                        </div>
-
-                        <!-- Blog Content -->
-                        <div class="blog-content">
-                            <span class="post-date">June 20, 2018</span>
-                            <p class="post-title">Viral Video</p>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div> --}}
-    <!-- ##### News Area End ##### -->
-
-    <!-- ##### Footer Area Start ##### -->
-    @include('layouts.front.footer')
-    <!-- ##### Footer Area Start ##### -->
-
-    <!-- ##### All Javascript Script ##### -->
-    <!-- jQuery-2.2.4 js -->
-    <script src="/assets/front/js/jquery/jquery-2.2.4.min.js"></script>
-    <!-- Popper js -->
-    <script src="/assets/front/js/bootstrap/popper.min.js"></script>
-    <!-- Bootstrap js -->
-    <script src="/assets/front/js/bootstrap/bootstrap.min.js"></script>
-    <!-- All Plugins js -->
-    <script src="/assets/front/js/plugins/plugins.js"></script>
-    <!-- Active js -->
-    <script src="/assets/front/js/active.js"></script>
+<body class="body">
+	
+	<!-- header -->
+	@include('layouts.front.header')
+	<!-- end header -->
+
+	<!-- home -->
+	<section class="home">
+		<!-- home bg -->
+		<div class="owl-carousel home__bg">
+			<div class="item home__cover" data-bg="/assets/front/img/home/star2.jpg"></div>
+		</div>
+		<!-- end home bg -->
+
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h1 class="home__title"><b>NEW ITEMS</b> OF THIS SEASON</h1>
+
+					<button class="home__nav home__nav--prev" type="button">
+						<i class="icon ion-ios-arrow-round-back"></i>
+					</button>
+					<button class="home__nav home__nav--next" type="button">
+						<i class="icon ion-ios-arrow-round-forward"></i>
+					</button>
+				</div>
+
+				<div class="col-12">
+					<div class="owl-carousel home__carousel">
+						<div class="item">
+							<!-- card -->
+							<div class="card card--big">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+									<span class="card__category">
+										<a href="#">Action</a>
+										<a href="#">Triler</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+								</div>
+							</div>
+							<!-- end card -->
+						</div>
+
+						<div class="item">
+							<!-- card -->
+							<div class="card card--big">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover2.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Benched</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+								</div>
+							</div>
+							<!-- end card -->
+						</div>
+
+						<div class="item">
+							<!-- card -->
+							<div class="card card--big">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover3.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Whitney</a></h3>
+									<span class="card__category">
+										<a href="#">Romance</a>
+										<a href="#">Drama</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
+								</div>
+							</div>
+							<!-- end card -->
+						</div>
+
+						<div class="item">
+							<!-- card -->
+							<div class="card card--big">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover4.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Blindspotting</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+										<a href="#">Drama</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.9</span>
+								</div>
+							</div>
+							<!-- end card -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end home -->
+
+	<!-- content -->
+	<section class="content">
+		<div class="content__head">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<!-- content title -->
+						<h2 class="content__title">New items</h2>
+						<!-- end content title -->
+
+						<!-- content tabs nav -->
+						<ul class="nav nav-tabs content__tabs" id="content__tabs" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">NEW RELEASES</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">MOVIES</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">TV SERIES</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-4" aria-selected="false">CARTOONS</a>
+							</li>
+						</ul>
+						<!-- end content tabs nav -->
+
+						<!-- content mobile tabs nav -->
+						<div class="content__mobile-tabs" id="content__mobile-tabs">
+							<div class="content__mobile-tabs-btn dropdown-toggle" role="navigation" id="mobile-tabs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<input type="button" value="New items">
+								<span></span>
+							</div>
+
+							<div class="content__mobile-tabs-menu dropdown-menu" aria-labelledby="mobile-tabs">
+								<ul class="nav nav-tabs" role="tablist">
+									<li class="nav-item"><a class="nav-link active" id="1-tab" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">NEW RELEASES</a></li>
+
+									<li class="nav-item"><a class="nav-link" id="2-tab" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">MOVIES</a></li>
+
+									<li class="nav-item"><a class="nav-link" id="3-tab" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">TV SERIES</a></li>
+
+									<li class="nav-item"><a class="nav-link" id="4-tab" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-4" aria-selected="false">CARTOONS</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- end content mobile tabs nav -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<!-- content tabs -->
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="1-tab">
+					<div class="row">
+						<!-- card -->
+						<div class="col-6 col-sm-12 col-lg-6">
+							<div class="card card--list">
+								<div class="row">
+									<div class="col-12 col-sm-4">
+										<div class="card__cover">
+											<img src="/assets/front/img/covers/cover.jpg" alt="">
+											<a href="#" class="card__play">
+												<i class="icon ion-ios-play"></i>
+											</a>
+										</div>
+									</div>
+
+									<div class="col-12 col-sm-8">
+										<div class="card__content">
+											<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+											<span class="card__category">
+												<a href="#">Action</a>
+												<a href="#">Triler</a>
+											</span>
+
+											<div class="card__wrap">
+												<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+
+												<ul class="card__list">
+													<li>HD</li>
+													<li>16+</li>
+												</ul>
+											</div>
+
+											<div class="card__description">
+												<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-12 col-lg-6">
+							<div class="card card--list">
+								<div class="row">
+									<div class="col-12 col-sm-4">
+										<div class="card__cover">
+											<img src="/assets/front/img/covers/cover2.jpg" alt="">
+											<a href="#" class="card__play">
+												<i class="icon ion-ios-play"></i>
+											</a>
+										</div>
+									</div>
+
+									<div class="col-12 col-sm-8">
+										<div class="card__content">
+											<h3 class="card__title"><a href="#">Benched</a></h3>
+											<span class="card__category">
+												<a href="#">Comedy</a>
+											</span>
+
+											<div class="card__wrap">
+												<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+
+												<ul class="card__list">
+													<li>HD</li>
+													<li>16+</li>
+												</ul>
+											</div>
+
+											<div class="card__description">
+												<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-12 col-lg-6">
+							<div class="card card--list">
+								<div class="row">
+									<div class="col-12 col-sm-4">
+										<div class="card__cover">
+											<img src="/assets/front/img/covers/cover3.jpg" alt="">
+											<a href="#" class="card__play">
+												<i class="icon ion-ios-play"></i>
+											</a>
+										</div>
+									</div>
+
+									<div class="col-12 col-sm-8">
+										<div class="card__content">
+											<h3 class="card__title"><a href="#">Whitney</a></h3>
+											<span class="card__category">
+												<a href="#">Romance</a>
+												<a href="#">Drama</a>
+												<a href="#">Music</a>
+											</span>
+
+											<div class="card__wrap">
+												<span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
+
+												<ul class="card__list">
+													<li>HD</li>
+													<li>16+</li>
+												</ul>
+											</div>
+
+											<div class="card__description">
+												<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-12 col-lg-6">
+							<div class="card card--list">
+								<div class="row">
+									<div class="col-12 col-sm-4">
+										<div class="card__cover">
+											<img src="/assets/front/img/covers/cover4.jpg" alt="">
+											<a href="#" class="card__play">
+												<i class="icon ion-ios-play"></i>
+											</a>
+										</div>
+									</div>
+
+									<div class="col-12 col-sm-8">
+										<div class="card__content">
+											<h3 class="card__title"><a href="#">Blindspotting</a></h3>
+											<span class="card__category">
+												<a href="#">Comedy</a>
+												<a href="#">Drama</a>
+											</span>
+
+											<div class="card__wrap">
+												<span class="card__rate"><i class="icon ion-ios-star"></i>7.9</span>
+
+												<ul class="card__list">
+													<li>HD</li>
+													<li>16+</li>
+												</ul>
+											</div>
+
+											<div class="card__description">
+												<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-12 col-lg-6">
+							<div class="card card--list">
+								<div class="row">
+									<div class="col-12 col-sm-4">
+										<div class="card__cover">
+											<img src="/assets/front/img/covers/cover5.jpg" alt="">
+											<a href="#" class="card__play">
+												<i class="icon ion-ios-play"></i>
+											</a>
+										</div>
+									</div>
+
+									<div class="col-12 col-sm-8">
+										<div class="card__content">
+											<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+											<span class="card__category">
+												<a href="#">Action</a>
+												<a href="#">Triler</a>
+											</span>
+
+											<div class="card__wrap">
+												<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+
+												<ul class="card__list">
+													<li>HD</li>
+													<li>16+</li>
+												</ul>
+											</div>
+
+											<div class="card__description">
+												<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-12 col-lg-6">
+							<div class="card card--list">
+								<div class="row">
+									<div class="col-12 col-sm-4">
+										<div class="card__cover">
+											<img src="/assets/front/img/covers/cover6.jpg" alt="">
+											<a href="#" class="card__play">
+												<i class="icon ion-ios-play"></i>
+											</a>
+										</div>
+									</div>
+
+									<div class="col-12 col-sm-8">
+										<div class="card__content">
+											<h3 class="card__title"><a href="#">Benched</a></h3>
+											<span class="card__category">
+												<a href="#">Comedy</a>
+											</span>
+
+											<div class="card__wrap">
+												<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+
+												<ul class="card__list">
+													<li>HD</li>
+													<li>16+</li>
+												</ul>
+											</div>
+
+											<div class="card__description">
+												<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+					</div>
+				</div>
+
+				<div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="2-tab">
+					<div class="row">
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+									<span class="card__category">
+										<a href="#">Action</a>
+										<a href="#">Triler</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover2.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Benched</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover3.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Whitney</a></h3>
+									<span class="card__category">
+										<a href="#">Romance</a>
+										<a href="#">Drama</a>
+										<a href="#">Music</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover4.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Blindspotting</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+										<a href="#">Drama</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.9</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover5.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+									<span class="card__category">
+										<a href="#">Action</a>
+										<a href="#">Triler</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover6.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Benched</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover6.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Whitney</a></h3>
+									<span class="card__category">
+										<a href="#">Romance</a>
+										<a href="#">Drama</a>
+										<a href="#">Music</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover5.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Blindspotting</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+										<a href="#">Drama</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.9</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover4.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+									<span class="card__category">
+										<a href="#">Action</a>
+										<a href="#">Triler</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover3.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Benched</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover2.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Whitney</a></h3>
+									<span class="card__category">
+										<a href="#">Romance</a>
+										<a href="#">Drama</a>
+										<a href="#">Music</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Blindspotting</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+										<a href="#">Drama</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.9</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+					</div>
+				</div>
+
+				<div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="3-tab">
+					<div class="row">
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover2.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+									<span class="card__category">
+										<a href="#">Action</a>
+										<a href="#">Triler</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Benched</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover4.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Whitney</a></h3>
+									<span class="card__category">
+										<a href="#">Romance</a>
+										<a href="#">Drama</a>
+										<a href="#">Music</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover3.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Blindspotting</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+										<a href="#">Drama</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.9</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover6.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+									<span class="card__category">
+										<a href="#">Action</a>
+										<a href="#">Triler</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover5.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Benched</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover5.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Whitney</a></h3>
+									<span class="card__category">
+										<a href="#">Romance</a>
+										<a href="#">Drama</a>
+										<a href="#">Music</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover6.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Blindspotting</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+										<a href="#">Drama</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.9</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover3.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+									<span class="card__category">
+										<a href="#">Action</a>
+										<a href="#">Triler</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover4.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Benched</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Whitney</a></h3>
+									<span class="card__category">
+										<a href="#">Romance</a>
+										<a href="#">Drama</a>
+										<a href="#">Music</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover2.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Blindspotting</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+										<a href="#">Drama</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.9</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+					</div>
+				</div>
+
+				<div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="4-tab">
+					<div class="row">
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+									<span class="card__category">
+										<a href="#">Action</a>
+										<a href="#">Triler</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover3.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Benched</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover2.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Whitney</a></h3>
+									<span class="card__category">
+										<a href="#">Romance</a>
+										<a href="#">Drama</a>
+										<a href="#">Music</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover6.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Blindspotting</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+										<a href="#">Drama</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.9</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover4.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+									<span class="card__category">
+										<a href="#">Action</a>
+										<a href="#">Triler</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover5.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Benched</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover6.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Whitney</a></h3>
+									<span class="card__category">
+										<a href="#">Romance</a>
+										<a href="#">Drama</a>
+										<a href="#">Music</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover5.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Blindspotting</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+										<a href="#">Drama</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.9</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover4.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+									<span class="card__category">
+										<a href="#">Action</a>
+										<a href="#">Triler</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover3.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Benched</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover2.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Whitney</a></h3>
+									<span class="card__category">
+										<a href="#">Romance</a>
+										<a href="#">Drama</a>
+										<a href="#">Music</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="/assets/front/img/covers/cover.jpg" alt="">
+									<a href="#" class="card__play">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="#">Blindspotting</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy</a>
+										<a href="#">Drama</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.9</span>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+					</div>
+				</div>
+			</div>
+			<!-- end content tabs -->
+		</div>
+	</section>
+	<!-- end content -->
+
+	<!-- expected premiere -->
+	<section class="section section--bg" data-bg="/assets/front/img/home/john.jpg">
+		<div class="container">
+			<div class="row">
+				<!-- section title -->
+				<div class="col-12">
+					<h2 class="section__title">Expected premiere</h2>
+				</div>
+				<!-- end section title -->
+
+				<!-- card -->
+				<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+					<div class="card">
+						<div class="card__cover">
+							<img src="/assets/front/img/covers/cover.jpg" alt="">
+							<a href="#" class="card__play">
+								<i class="icon ion-ios-play"></i>
+							</a>
+						</div>
+						<div class="card__content">
+							<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+							<span class="card__category">
+								<a href="#">Action</a>
+								<a href="#">Triler</a>
+							</span>
+							<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+						</div>
+					</div>
+				</div>
+				<!-- end card -->
+
+				<!-- card -->
+				<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+					<div class="card">
+						<div class="card__cover">
+							<img src="/assets/front/img/covers/cover3.jpg" alt="">
+							<a href="#" class="card__play">
+								<i class="icon ion-ios-play"></i>
+							</a>
+						</div>
+						<div class="card__content">
+							<h3 class="card__title"><a href="#">Benched</a></h3>
+							<span class="card__category">
+								<a href="#">Comedy</a>
+							</span>
+							<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+						</div>
+					</div>
+				</div>
+				<!-- end card -->
+
+				<!-- card -->
+				<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+					<div class="card">
+						<div class="card__cover">
+							<img src="/assets/front/img/covers/cover2.jpg" alt="">
+							<a href="#" class="card__play">
+								<i class="icon ion-ios-play"></i>
+							</a>
+						</div>
+						<div class="card__content">
+							<h3 class="card__title"><a href="#">Whitney</a></h3>
+							<span class="card__category">
+								<a href="#">Romance</a>
+								<a href="#">Drama</a>
+								<a href="#">Music</a>
+							</span>
+							<span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
+						</div>
+					</div>
+				</div>
+				<!-- end card -->
+
+				<!-- card -->
+				<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+					<div class="card">
+						<div class="card__cover">
+							<img src="/assets/front/img/covers/cover6.jpg" alt="">
+							<a href="#" class="card__play">
+								<i class="icon ion-ios-play"></i>
+							</a>
+						</div>
+						<div class="card__content">
+							<h3 class="card__title"><a href="#">Blindspotting</a></h3>
+							<span class="card__category">
+								<a href="#">Comedy</a>
+								<a href="#">Drama</a>
+							</span>
+							<span class="card__rate"><i class="icon ion-ios-star"></i>7.9</span>
+						</div>
+					</div>
+				</div>
+				<!-- end card -->
+
+				<!-- card -->
+				<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+					<div class="card">
+						<div class="card__cover">
+							<img src="/assets/front/img/covers/cover4.jpg" alt="">
+							<a href="#" class="card__play">
+								<i class="icon ion-ios-play"></i>
+							</a>
+						</div>
+						<div class="card__content">
+							<h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
+							<span class="card__category">
+								<a href="#">Action</a>
+								<a href="#">Triler</a>
+							</span>
+							<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+						</div>
+					</div>
+				</div>
+				<!-- end card -->
+
+				<!-- card -->
+				<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+					<div class="card">
+						<div class="card__cover">
+							<img src="/assets/front/img/covers/cover5.jpg" alt="">
+							<a href="#" class="card__play">
+								<i class="icon ion-ios-play"></i>
+							</a>
+						</div>
+						<div class="card__content">
+							<h3 class="card__title"><a href="#">Benched</a></h3>
+							<span class="card__category">
+								<a href="#">Comedy</a>
+							</span>
+							<span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+						</div>
+					</div>
+				</div>
+				<!-- end card -->
+
+				<!-- section btn -->
+				<div class="col-12">
+					<a href="#" class="section__btn">Show more</a>
+				</div>
+				<!-- end section btn -->
+			</div>
+		</div>
+	</section>
+	<!-- end expected premiere -->
+
+	<!-- partners -->
+	<section class="section">
+		<div class="container">
+			<div class="row">
+				<!-- section title -->
+				<div class="col-12">
+					<h2 class="section__title section__title--no-margin">Our Partners</h2>
+				</div>
+				<!-- end section title -->
+
+				<!-- section text -->
+				<div class="col-12">
+					<p class="section__text section__text--last-with-margin">It is a long <b>established</b> fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.</p>
+				</div>
+				<!-- end section text -->
+
+				<!-- partner -->
+				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+					<a href="#" class="partner">
+						<img src="/assets/front/img/partners/themeforest-light-background.png" alt="" class="partner__img">
+					</a>
+				</div>
+				<!-- end partner -->
+
+				<!-- partner -->
+				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+					<a href="#" class="partner">
+						<img src="/assets/front/img/partners/audiojungle-light-background.png" alt="" class="partner__img">
+					</a>
+				</div>
+				<!-- end partner -->
+
+				<!-- partner -->
+				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+					<a href="#" class="partner">
+						<img src="/assets/front/img/partners/codecanyon-light-background.png" alt="" class="partner__img">
+					</a>
+				</div>
+				<!-- end partner -->
+
+				<!-- partner -->
+				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+					<a href="#" class="partner">
+						<img src="/assets/front/img/partners/photodune-light-background.png" alt="" class="partner__img">
+					</a>
+				</div>
+				<!-- end partner -->
+
+				<!-- partner -->
+				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+					<a href="#" class="partner">
+						<img src="/assets/front/img/partners/activeden-light-background.png" alt="" class="partner__img">
+					</a>
+				</div>
+				<!-- end partner -->
+
+				<!-- partner -->
+				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+					<a href="#" class="partner">
+						<img src="/assets/front/img/partners/3docean-light-background.png" alt="" class="partner__img">
+					</a>
+				</div>
+				<!-- end partner -->
+			</div>
+		</div>
+	</section>
+	<!-- end partners -->
+
+	<!-- footer -->
+	@include('layouts.front.footer')
+	<!-- end footer -->
+
+	<!-- JS -->
+	<script src="/assets/front/js/jquery-3.3.1.min.js"></script>
+	<script src="/assets/front/js/bootstrap.bundle.min.js"></script>
+	<script src="/assets/front/js/owl.carousel.min.js"></script>
+	<script src="/assets/front/js/jquery.mousewheel.min.js"></script>
+	<script src="/assets/front/js/jquery.mCustomScrollbar.min.js"></script>
+	<script src="/assets/front/js/wNumb.js"></script>
+	<script src="/assets/front/js/nouislider.min.js"></script>
+	<script src="/assets/front/js/plyr.min.js"></script>
+	<script src="/assets/front/js/jquery.morelines.min.js"></script>
+	<script src="/assets/front/js/photoswipe.min.js"></script>
+	<script src="/assets/front/js/photoswipe-ui-default.min.js"></script>
+	<script src="/assets/front/js/main.js"></script>
 </body>
 
 </html>

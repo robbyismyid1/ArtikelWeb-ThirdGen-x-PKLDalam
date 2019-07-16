@@ -7,25 +7,25 @@
 
 	<!-- Font -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CUbuntu:300,400,500,700" rel="stylesheet">
-
+	 
 	<!-- CSS -->
-	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-	<link rel="stylesheet" href="css/nouislider.min.css">
-	<link rel="stylesheet" href="css/ionicons.min.css">
-	<link rel="stylesheet" href="css/plyr.css">
-	<link rel="stylesheet" href="css/photoswipe.css">
-	<link rel="stylesheet" href="css/default-skin.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="/assets/front/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="/assets/front/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="/assets/front/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="/assets/front/css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="/assets/front/css/nouislider.min.css">
+	<link rel="stylesheet" href="/assets/front/css/ionicons.min.css">
+	<link rel="stylesheet" href="/assets/front/css/plyr.css">
+	<link rel="stylesheet" href="/assets/front/css/photoswipe.css">
+	<link rel="stylesheet" href="/assets/front/css/default-skin.css">
+	<link rel="stylesheet" href="/assets/front/css/main.css">
 
 	<!-- Favicons -->
-	<link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32">
-	<link rel="apple-touch-icon" href="icon/favicon-32x32.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="icon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="icon/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="icon/apple-touch-icon-144x144.png">
+	<link rel="icon" type="image/png" href="/assets/front/icon/favicon-32x32.png" sizes="32x32">
+	<link rel="apple-touch-icon" href="/assets/front/icon/favicon-32x32.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/front/icon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/front/icon/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/front/icon/apple-touch-icon-144x144.png">
 
 	<meta name="description" content="">
 	<meta name="keywords" content="">
@@ -44,7 +44,7 @@
 						<div class="header__content">
 							<!-- header logo -->
 							<a href="index.html" class="header__logo">
-								<img src="img/logo.svg" alt="">
+								<img src="/assets/front/img/logo.svg" alt="">
 							</a>
 							<!-- end header logo -->
 
@@ -142,16 +142,7 @@
 	<!-- end header -->
 
 	<!-- home -->
-	<section class="home">
-		<!-- home bg -->
-		<div class="owl-carousel home__bg">
-			<div class="item home__cover" data-bg="img/home/home__bg.jpg"></div>
-			<div class="item home__cover" data-bg="img/home/home__bg2.jpg"></div>
-			<div class="item home__cover" data-bg="img/home/home__bg3.jpg"></div>
-			<div class="item home__cover" data-bg="img/home/home__bg4.jpg"></div>
-		</div>
-		<!-- end home bg -->
-
+	<section class="home home--bg">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -171,7 +162,7 @@
 							<!-- card -->
 							<div class="card card--big">
 								<div class="card__cover">
-									<img src="img/covers/cover.jpg" alt="">
+									<img src="/assets/front/img/covers/cover.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -192,7 +183,7 @@
 							<!-- card -->
 							<div class="card card--big">
 								<div class="card__cover">
-									<img src="img/covers/cover2.jpg" alt="">
+									<img src="/assets/front/img/covers/cover2.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -212,7 +203,7 @@
 							<!-- card -->
 							<div class="card card--big">
 								<div class="card__cover">
-									<img src="img/covers/cover3.jpg" alt="">
+									<img src="/assets/front/img/covers/cover3.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -233,7 +224,7 @@
 							<!-- card -->
 							<div class="card card--big">
 								<div class="card__cover">
-									<img src="img/covers/cover4.jpg" alt="">
+									<img src="/assets/front/img/covers/cover4.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -322,7 +313,7 @@
 								<div class="row">
 									<div class="col-12 col-sm-4">
 										<div class="card__cover">
-											<img src="img/covers/cover.jpg" alt="">
+											<img src="/assets/front/img/covers/cover.jpg" alt="">
 											<a href="#" class="card__play">
 												<i class="icon ion-ios-play"></i>
 											</a>
@@ -362,7 +353,7 @@
 								<div class="row">
 									<div class="col-12 col-sm-4">
 										<div class="card__cover">
-											<img src="img/covers/cover2.jpg" alt="">
+											<img src="/assets/front/img/covers/cover2.jpg" alt="">
 											<a href="#" class="card__play">
 												<i class="icon ion-ios-play"></i>
 											</a>
@@ -401,7 +392,7 @@
 								<div class="row">
 									<div class="col-12 col-sm-4">
 										<div class="card__cover">
-											<img src="img/covers/cover3.jpg" alt="">
+											<img src="/assets/front/img/covers/cover3.jpg" alt="">
 											<a href="#" class="card__play">
 												<i class="icon ion-ios-play"></i>
 											</a>
@@ -442,7 +433,7 @@
 								<div class="row">
 									<div class="col-12 col-sm-4">
 										<div class="card__cover">
-											<img src="img/covers/cover4.jpg" alt="">
+											<img src="/assets/front/img/covers/cover4.jpg" alt="">
 											<a href="#" class="card__play">
 												<i class="icon ion-ios-play"></i>
 											</a>
@@ -482,7 +473,7 @@
 								<div class="row">
 									<div class="col-12 col-sm-4">
 										<div class="card__cover">
-											<img src="img/covers/cover5.jpg" alt="">
+											<img src="/assets/front/img/covers/cover5.jpg" alt="">
 											<a href="#" class="card__play">
 												<i class="icon ion-ios-play"></i>
 											</a>
@@ -522,7 +513,7 @@
 								<div class="row">
 									<div class="col-12 col-sm-4">
 										<div class="card__cover">
-											<img src="img/covers/cover6.jpg" alt="">
+											<img src="/assets/front/img/covers/cover6.jpg" alt="">
 											<a href="#" class="card__play">
 												<i class="icon ion-ios-play"></i>
 											</a>
@@ -563,7 +554,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover.jpg" alt="">
+									<img src="/assets/front/img/covers/cover.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -584,7 +575,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover2.jpg" alt="">
+									<img src="/assets/front/img/covers/cover2.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -604,7 +595,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover3.jpg" alt="">
+									<img src="/assets/front/img/covers/cover3.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -626,7 +617,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover4.jpg" alt="">
+									<img src="/assets/front/img/covers/cover4.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -647,7 +638,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover5.jpg" alt="">
+									<img src="/assets/front/img/covers/cover5.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -668,7 +659,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover6.jpg" alt="">
+									<img src="/assets/front/img/covers/cover6.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -688,7 +679,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover6.jpg" alt="">
+									<img src="/assets/front/img/covers/cover6.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -710,7 +701,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover5.jpg" alt="">
+									<img src="/assets/front/img/covers/cover5.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -731,7 +722,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover4.jpg" alt="">
+									<img src="/assets/front/img/covers/cover4.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -752,7 +743,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover3.jpg" alt="">
+									<img src="/assets/front/img/covers/cover3.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -772,7 +763,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover2.jpg" alt="">
+									<img src="/assets/front/img/covers/cover2.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -794,7 +785,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover.jpg" alt="">
+									<img src="/assets/front/img/covers/cover.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -819,7 +810,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover2.jpg" alt="">
+									<img src="/assets/front/img/covers/cover2.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -840,7 +831,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover.jpg" alt="">
+									<img src="/assets/front/img/covers/cover.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -860,7 +851,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover4.jpg" alt="">
+									<img src="/assets/front/img/covers/cover4.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -882,7 +873,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover3.jpg" alt="">
+									<img src="/assets/front/img/covers/cover3.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -903,7 +894,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover6.jpg" alt="">
+									<img src="/assets/front/img/covers/cover6.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -924,7 +915,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover5.jpg" alt="">
+									<img src="/assets/front/img/covers/cover5.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -944,7 +935,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover5.jpg" alt="">
+									<img src="/assets/front/img/covers/cover5.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -966,7 +957,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover6.jpg" alt="">
+									<img src="/assets/front/img/covers/cover6.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -987,7 +978,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover3.jpg" alt="">
+									<img src="/assets/front/img/covers/cover3.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -1008,7 +999,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover4.jpg" alt="">
+									<img src="/assets/front/img/covers/cover4.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -1028,7 +1019,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover.jpg" alt="">
+									<img src="/assets/front/img/covers/cover.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -1050,7 +1041,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover2.jpg" alt="">
+									<img src="/assets/front/img/covers/cover2.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -1075,7 +1066,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover.jpg" alt="">
+									<img src="/assets/front/img/covers/cover.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -1096,7 +1087,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover3.jpg" alt="">
+									<img src="/assets/front/img/covers/cover3.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -1116,7 +1107,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover2.jpg" alt="">
+									<img src="/assets/front/img/covers/cover2.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -1138,7 +1129,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover6.jpg" alt="">
+									<img src="/assets/front/img/covers/cover6.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -1159,7 +1150,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover4.jpg" alt="">
+									<img src="/assets/front/img/covers/cover4.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -1180,7 +1171,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover5.jpg" alt="">
+									<img src="/assets/front/img/covers/cover5.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -1200,7 +1191,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover6.jpg" alt="">
+									<img src="/assets/front/img/covers/cover6.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -1222,7 +1213,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover5.jpg" alt="">
+									<img src="/assets/front/img/covers/cover5.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -1243,7 +1234,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover4.jpg" alt="">
+									<img src="/assets/front/img/covers/cover4.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -1264,7 +1255,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover3.jpg" alt="">
+									<img src="/assets/front/img/covers/cover3.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -1284,7 +1275,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover2.jpg" alt="">
+									<img src="/assets/front/img/covers/cover2.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -1306,7 +1297,7 @@
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover.jpg" alt="">
+									<img src="/assets/front/img/covers/cover.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -1344,7 +1335,7 @@
 				<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 					<div class="card">
 						<div class="card__cover">
-							<img src="img/covers/cover.jpg" alt="">
+							<img src="/assets/front/img/covers/cover.jpg" alt="">
 							<a href="#" class="card__play">
 								<i class="icon ion-ios-play"></i>
 							</a>
@@ -1365,7 +1356,7 @@
 				<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 					<div class="card">
 						<div class="card__cover">
-							<img src="img/covers/cover3.jpg" alt="">
+							<img src="/assets/front/img/covers/cover3.jpg" alt="">
 							<a href="#" class="card__play">
 								<i class="icon ion-ios-play"></i>
 							</a>
@@ -1385,7 +1376,7 @@
 				<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 					<div class="card">
 						<div class="card__cover">
-							<img src="img/covers/cover2.jpg" alt="">
+							<img src="/assets/front/img/covers/cover2.jpg" alt="">
 							<a href="#" class="card__play">
 								<i class="icon ion-ios-play"></i>
 							</a>
@@ -1407,7 +1398,7 @@
 				<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 					<div class="card">
 						<div class="card__cover">
-							<img src="img/covers/cover6.jpg" alt="">
+							<img src="/assets/front/img/covers/cover6.jpg" alt="">
 							<a href="#" class="card__play">
 								<i class="icon ion-ios-play"></i>
 							</a>
@@ -1428,7 +1419,7 @@
 				<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 					<div class="card">
 						<div class="card__cover">
-							<img src="img/covers/cover4.jpg" alt="">
+							<img src="/assets/front/img/covers/cover4.jpg" alt="">
 							<a href="#" class="card__play">
 								<i class="icon ion-ios-play"></i>
 							</a>
@@ -1449,7 +1440,7 @@
 				<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 					<div class="card">
 						<div class="card__cover">
-							<img src="img/covers/cover5.jpg" alt="">
+							<img src="/assets/front/img/covers/cover5.jpg" alt="">
 							<a href="#" class="card__play">
 								<i class="icon ion-ios-play"></i>
 							</a>
@@ -1494,7 +1485,7 @@
 				<!-- partner -->
 				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
 					<a href="#" class="partner">
-						<img src="img/partners/themeforest-light-background.png" alt="" class="partner__img">
+						<img src="/assets/front/img/partners/themeforest-light-background.png" alt="" class="partner__img">
 					</a>
 				</div>
 				<!-- end partner -->
@@ -1502,7 +1493,7 @@
 				<!-- partner -->
 				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
 					<a href="#" class="partner">
-						<img src="img/partners/audiojungle-light-background.png" alt="" class="partner__img">
+						<img src="/assets/front/img/partners/audiojungle-light-background.png" alt="" class="partner__img">
 					</a>
 				</div>
 				<!-- end partner -->
@@ -1510,7 +1501,7 @@
 				<!-- partner -->
 				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
 					<a href="#" class="partner">
-						<img src="img/partners/codecanyon-light-background.png" alt="" class="partner__img">
+						<img src="/assets/front/img/partners/codecanyon-light-background.png" alt="" class="partner__img">
 					</a>
 				</div>
 				<!-- end partner -->
@@ -1518,7 +1509,7 @@
 				<!-- partner -->
 				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
 					<a href="#" class="partner">
-						<img src="img/partners/photodune-light-background.png" alt="" class="partner__img">
+						<img src="/assets/front/img/partners/photodune-light-background.png" alt="" class="partner__img">
 					</a>
 				</div>
 				<!-- end partner -->
@@ -1526,7 +1517,7 @@
 				<!-- partner -->
 				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
 					<a href="#" class="partner">
-						<img src="img/partners/activeden-light-background.png" alt="" class="partner__img">
+						<img src="/assets/front/img/partners/activeden-light-background.png" alt="" class="partner__img">
 					</a>
 				</div>
 				<!-- end partner -->
@@ -1534,7 +1525,7 @@
 				<!-- partner -->
 				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
 					<a href="#" class="partner">
-						<img src="img/partners/3docean-light-background.png" alt="" class="partner__img">
+						<img src="/assets/front/img/partners/3docean-light-background.png" alt="" class="partner__img">
 					</a>
 				</div>
 				<!-- end partner -->
@@ -1551,8 +1542,8 @@
 				<div class="col-12 col-md-3">
 					<h6 class="footer__title">Download Our App</h6>
 					<ul class="footer__app">
-						<li><a href="#"><img src="img/Download_on_the_App_Store_Badge.svg" alt=""></a></li>
-						<li><a href="#"><img src="img/google-play-badge.png" alt=""></a></li>
+						<li><a href="#"><img src="/assets/front/img/Download_on_the_App_Store_Badge.svg" alt=""></a></li>
+						<li><a href="#"><img src="/assets/front/img/google-play-badge.png" alt=""></a></li>
 					</ul>
 				</div>
 				<!-- end footer list -->
@@ -1613,18 +1604,18 @@
 	<!-- end footer -->
 
 	<!-- JS -->
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.mousewheel.min.js"></script>
-	<script src="js/jquery.mCustomScrollbar.min.js"></script>
-	<script src="js/wNumb.js"></script>
-	<script src="js/nouislider.min.js"></script>
-	<script src="js/plyr.min.js"></script>
-	<script src="js/jquery.morelines.min.js"></script>
-	<script src="js/photoswipe.min.js"></script>
-	<script src="js/photoswipe-ui-default.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="/assets/front/js/jquery-3.3.1.min.js"></script>
+	<script src="/assets/front/js/bootstrap.bundle.min.js"></script>
+	<script src="/assets/front/js/owl.carousel.min.js"></script>
+	<script src="/assets/front/js/jquery.mousewheel.min.js"></script>
+	<script src="/assets/front/js/jquery.mCustomScrollbar.min.js"></script>
+	<script src="/assets/front/js/wNumb.js"></script>
+	<script src="/assets/front/js/nouislider.min.js"></script>
+	<script src="/assets/front/js/plyr.min.js"></script>
+	<script src="/assets/front/js/jquery.morelines.min.js"></script>
+	<script src="/assets/front/js/photoswipe.min.js"></script>
+	<script src="/assets/front/js/photoswipe-ui-default.min.js"></script>
+	<script src="/assets/front/js/main.js"></script>
 </body>
 
 </html>
