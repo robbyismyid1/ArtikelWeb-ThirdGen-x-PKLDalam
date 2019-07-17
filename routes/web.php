@@ -11,20 +11,17 @@
 |
 */
 
-Route::get('/', function () {
-    return view('front.index');
-});
-Route::get('/about', function () {
-    return view('front.about');
-});
-Route::get('/faq', function () {
-    return view('front.faq');
-});
-Route::get('/detail', function () {
-    return view('front.details1');
-});
-Route::get('/catalog', function () {
-    return view('front.catalog2');
+Route::group(['prefix' => '/'], function () {
+    Route::get('/', 'FrontController@index')->name('index');
+    Route::get('/faq', function () {
+        return view('front.faq');
+    });
+    Route::get('/detail', function () {
+        return view('front.details1');
+    });
+    Route::get('/catalog', function () {
+        return view('front.catalog2');
+    });
 });
 
 Auth::routes();
