@@ -2,17 +2,17 @@
 @extends('layouts.master')
 
 @section('title')
-    Genre
+    Nama Negara
 @endsection
 
-@section('header') Genre @endsection
+@section('header') Nama Negara @endsection
 @section('button-add')
     <div class="section-header-button">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#create-tag">Tambah Data</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#create-neg">Tambah Data</button>
     </div>
 @endsection
-@section('desc') Kumpulan data Genre @endsection
-@section('header-2') Genre @endsection
+@section('desc') Kumpulan data Negara @endsection
+@section('header-2') Nama Negara @endsection
 
 @section('content')
 
@@ -35,20 +35,20 @@
                   <th class="text-center">
                     #
                   </th>
-                  <th>Nama</th>
+                  <th>Negara</th>
                   <th>Action</th>
                 </tr>
               </thead>
               <tbody>
-                @foreach($tag as $data)
+                @foreach($negara as $data)
                     <tr>
                         <td class="text-center">
                             {{ $loop->iteration }}
                         </td>
                         <td>{{ $data->name }}</td>
                         <td>
-                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#edit-tag" data-id="{{ $data->id }}" data-nama="{{ $data->name }}">Edit</button>
-                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-tag" data-id="{{ $data->id }}" data-nama="{{ $data->name }}">Delete</button>
+                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#edit-neg" data-id="{{ $data->id }}" data-nama="{{ $data->name }}">Edit</button>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-neg" data-id="{{ $data->id }}" data-nama="{{ $data->name }}">Delete</button>
                         </td>
                     </tr>
                 @endforeach

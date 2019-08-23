@@ -48,6 +48,8 @@
 
             @include('admin.kategori.modal')
             @include('admin.tag.modal')
+            @include('admin.rilis.modal')
+            @include('admin.negara.modal')
 
 
             {{-- Footer --}}
@@ -121,6 +123,64 @@
             modal.find('#nama').val(name)
             modal.find('#id').val(id)
             })
+    </script>
+
+    {{-- JS Modal Rilis --}}
+    <script>
+        $('#edit-rilis').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget)
+            var name = button.data('nama')
+            var id = button.data('id')
+            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+            var modal = $(this)
+
+            modal.find('#nama').val(name)
+            modal.find('#id').val(id)
+          })
+    </script>
+
+    <script>
+        $('#delete-rilis').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget)
+            var name = button.data('nama')
+            var id = button.data('id')
+            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+            var modal = $(this)
+
+            modal.find('#nama').val(name)
+            modal.find('#id').val(id)
+          })
+    </script>
+
+     {{-- JS Modal Negara --}}
+    <script>
+        $('#edit-neg').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget)
+            var name = button.data('nama')
+            var id = button.data('id')
+            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+            var modal = $(this)
+
+            modal.find('#nama').val(name)
+            modal.find('#id').val(id)
+          })
+    </script>
+
+    <script>
+        $('#delete-neg').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget)
+            var name = button.data('nama')
+            var id = button.data('id')
+            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+            var modal = $(this)
+
+            modal.find('#nama').val(name)
+            modal.find('#id').val(id)
+          })
     </script>
 
 

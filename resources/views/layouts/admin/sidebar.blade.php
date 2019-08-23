@@ -24,7 +24,9 @@
                 <a href="#" class="nav-link has-dropdown"><i class="fas fa-th"></i> <span>Komponen Artikel</span></a>
                 <ul class="dropdown-menu">
                     <li class="{{ (request()->is('admin/kategori')) ? 'active' : '' }}"><a class="nav-link" href="{{ url('/admin/kategori') }}">Kategori</a></li>
-                    <li class="{{ (request()->is('admin/tag')) ? 'active' : '' }}"><a class="nav-link" href="{{ url('/admin/tag') }}">Tag</a></li>
+                    <li class="{{ (request()->is('admin/tag')) ? 'active' : '' }}"><a class="nav-link" href="{{ url('/admin/tag') }}">Genre</a></li>
+                    <li class="{{ (request()->is('admin/negara')) ? 'active' : '' }}"><a class="nav-link" href="{{ url('/admin/negara') }}">Negara</a></li>
+                    <li class="{{ (request()->is('admin/rilis')) ? 'active' : '' }}"><a class="nav-link" href="{{ url('/admin/rilis') }}">Tahun Rilis</a></li>
                 </ul>
             </li>
     </aside>

@@ -4,13 +4,13 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Kategori extends Model
+class Rilis extends Model
 {
-	protected $fillable = ['nama', 'slug'];
+    protected $fillable = ['nama', 'slug'];
 	public $timestamps = true;
 	public function artikel()
 	{
-		return $this->hasMany('App\Artikel', 'kategori_id');
+		return $this->hasMany('App\Artikel', 'rilis_id');
 	}
 
 	public function getRouteKeyName()
@@ -25,7 +25,7 @@ class Kategori extends Model
 			// mengecek apakah penulis masih punya buku
 			if ($kategori->artikel->count() > 0) {
 				// menyiapkan pesan error
-				$html = 'Kategori tidak bisa dihapus karena masih memiliki artikel : ';
+				$html = 'Tahun rilis tidak bisa dihapus karena masih memiliki artikel : ';
 				$html .= '<ul>';
 				foreach ($kategori->artikel as $data) {
 					$html .= "<li>$data->judul</li>";

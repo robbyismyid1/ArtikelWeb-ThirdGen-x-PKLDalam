@@ -72,12 +72,15 @@ Artikel
                     <th class="text-center pt-2">
                       #
                     </th>
-                    <th>Judul</th>
-                    <th>Kategori</th>
+                    <th>Title</th>
+                    <th>Country</th>
+                    <th>Genre</th>
+                    <th>Year Released</th>
+                    <th>Categories</th>
+                    <th>Rating</th>
+                    <th>Duration</th>
                     <th>Thumbnail</th>
-                    <th>Author</th>
                     <th>Created At</th>
-                    <th>Tags</th>
                   </tr>
                   @foreach($artikel as $data)
                     <tr>
@@ -98,19 +101,12 @@ Artikel
                             </div>
                         </td>
                         <td>
-                            {{ $data->kategori->nama }}
+                            @foreach($data->negara as $item)
+                                <div class="badge badge-primary">
+                                    {{ $item->name }}
+                                </div>
+                            @endforeach
                         </td>
-                        <td>
-                            
-                                <img alt="image" src="/assets/img/artikel/{{ $data->foto }}" width="60px" data-toggle="title" title=""> <div class="d-inline-block ml-1"></div>
-                            
-                        </td>
-                        <td>
-                            
-                                <img alt="image" src="{{ asset('admin/assets/img/avatar/avatar-5.png')}}" class="rounded-circle" width="35" data-toggle="title" title=""> <div class="d-inline-block ml-1">{{ $data->user->name }}</div>
-                            
-                        </td>
-                        <td>{{ $data->created_at->diffForHumans() }}</td>
                         <td>
                             @foreach($data->tag as $item)
                                 <div class="badge badge-primary">
@@ -118,6 +114,26 @@ Artikel
                                 </div>
                             @endforeach
                         </td>
+                        <td>
+                            {{ $data->rilis->nama }}
+                        </td>
+                        <td>
+                            {{ $data->kategori->nama }}
+                        </td>
+                        <td>
+                            {{ $data->rating }}
+                        </td>
+                        <td>
+                            {{ $data->durasi }}
+                        </td>
+                        <td>
+                            
+                                <img alt="image" src="/assets/img/artikel/{{ $data->foto }}" width="60px" data-toggle="title" title=""> <div class="d-inline-block ml-1"></div>
+                            
+                        </td>
+                      
+                        <td>{{ $data->created_at->diffForHumans() }}</td>
+                        
                     </tr>
 
                     @endforeach

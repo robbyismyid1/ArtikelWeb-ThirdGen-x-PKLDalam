@@ -6,12 +6,22 @@ use Illuminate\Database\Eloquent\Model;
 
 class Artikel extends Model
 {
-    protected $fillable = ['judul', 'slug', 'konten', 'foto', 'kategori_id', 'user_id'];
+    protected $fillable = ['judul', 'slug', 'rating', 'durasi', 'negara', 'konten', 'foto', 'kategori_id', 'user_id'];
     public $timestamps = true;
 
     public function tag()
     {
         return $this->belongsToMany('App\Tag', 'artikel_tags', 'artikel_id', 'tag_id');
+    }
+
+    public function negara()
+    {
+        return $this->belongsToMany('App\Negara', 'artikel_negaras', 'artikel_id', 'negaras_id');
+    }
+    
+    public function rilis()
+    {
+        return $this->belongsTo('App\Rilis', 'rilis_id');
     }
 
     public function user()

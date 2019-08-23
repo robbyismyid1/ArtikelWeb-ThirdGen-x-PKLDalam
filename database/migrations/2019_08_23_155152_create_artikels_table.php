@@ -14,13 +14,16 @@ class CreateArtikelsTable extends Migration
     public function up()
     {
         Schema::create('artikels', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->string('judul');
             $table->string('slug');
+            $table->string('rating');
+            $table->string('durasi');
             $table->text('konten');
             $table->string('foto');
             $table->boolean('status')->default(true);
             $table->integer('kategori_id')->unsigned();
+            $table->integer('rilis_id')->unsigned();
             $table->integer('user_id')->unsigned();
             $table->timestamps();
         });
@@ -36,29 +39,3 @@ class CreateArtikelsTable extends Migration
         Schema::dropIfExists('artikels');
     }
 }
-
-//     public function up()
-//     {
-//         Schema::create('artikels', function (Blueprint $table) {
-//             $table->increments('id');
-//             $table->string('judul');
-//             $table->string('slug');
-//             $table->text('konten');
-//             $table->string('foto');
-//             $table->boolean('status')->default(true);
-//             $table->integer('kategori_id')->unsigned();
-//             $table->integer('user_id')->unsigned();
-//             $table->timestamps();
-//         });
-//     }
-
-//     /**
-//      * Reverse the migrations.
-//      *
-//      * @return void
-//      */
-//     public function down()
-//     {
-//         Schema::dropIfExists('artikels');
-//     }
-// }

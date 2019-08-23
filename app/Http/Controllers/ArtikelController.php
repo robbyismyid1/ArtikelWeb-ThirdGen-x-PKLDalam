@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Artikel;
 use App\Kategori;
 use App\Tag;
+use App\Rilis;
+use App\Negara;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
@@ -39,8 +41,10 @@ class ArtikelController extends Controller
     {
         $tag = Tag::all();
         $cat = Kategori::all();
+        $year = Rilis::all();
+        $negara = Negara::all();
 
-        return view('admin.artikel.create', compact('tag', 'cat'));
+        return view('admin.artikel.create', compact('tag', 'cat', 'year', 'negara'));
     }
 
     /**
@@ -64,8 +68,11 @@ class ArtikelController extends Controller
         $artikel->judul = $request->judul;
         $artikel->slug = str_slug($request->judul);
         $artikel->konten = $request->konten;
+        $artikel->rating = $request->rating;
+        $artikel->durasi = $request->durasi;
         $artikel->user_id = Auth::user()->id;
         $artikel->kategori_id = $request->kategori;
+        $artikel->rilis_id = $request->rilis;
         # Foto
         if ($request->hasFile('foto')) {
             $file = $request->file('foto');
@@ -76,6 +83,7 @@ class ArtikelController extends Controller
         }
         $artikel->save();
         $artikel->tag()->attach($request->tag);
+        $artikel->negara()->attach($request->negara);
         //
         toastr()->success('Data artikel berhasil dismpan!');
 
@@ -105,9 +113,12 @@ class ArtikelController extends Controller
         $artikel = Artikel::findOrFail($id);
         $cat = Kategori::all();
         $tag = Tag::all();
+        $negara = Negara::all();
+        $rilis = Rilis::all();
         $select = $artikel->tag->pluck('id')->toArray();
+        $select2 = $artikel->negara->pluck('id')->toArray();
 
-        return view('admin.artikel.edit', compact('artikel', 'cat', 'tag', 'select'));
+        return view('admin.artikel.edit', compact('artikel', 'cat', 'tag', 'negara', 'rilis', 'select', 'select2' ));
     }
 
     /**
@@ -132,8 +143,11 @@ class ArtikelController extends Controller
         $artikel->judul = $request->judul;
         $artikel->slug = str_slug($request->judul);
         $artikel->konten = $request->konten;
+        $artikel->rating = $request->rating;
+        $artikel->durasi = $request->durasi;
         $artikel->user_id = Auth::user()->id;
         $artikel->kategori_id = $request->kategori;
+        $artikel->rilis_id = $request->rilis;
         # Foto
         if ($request->hasFile('foto')) {
             $file = $request->file('foto');
@@ -152,8 +166,10 @@ class ArtikelController extends Controller
             }
             $artikel->foto = $filename;
         }
+         
         $artikel->save();
         $artikel->tag()->sync($request->tag);
+        $artikel->negara()->sync($request->negara);
 
         toastr()->success('Data artikel berhasil diubah!');
 
@@ -180,6 +196,7 @@ class ArtikelController extends Controller
         }
 
         $artikel->tag()->detach($artikel->id);
+        $artikel->negara()->detach($artikel->id);
         $artikel->delete();
 
         toastr()->error('Data artikel berhasil dihapus!');

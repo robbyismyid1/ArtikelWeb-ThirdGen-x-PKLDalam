@@ -47,7 +47,7 @@ class KategoriController extends Controller
         $cat->slug = str_slug($request->nama);
         $cat->save();
 
-        toastr()->success('Data berhasil ditambah!', "$cat->name");
+        toastr()->success('Data berhasil ditambah!', "$cat->nama");
 
         return redirect()->route('kategori.index');
     }

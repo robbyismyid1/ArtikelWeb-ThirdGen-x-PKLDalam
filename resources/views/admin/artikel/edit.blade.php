@@ -31,6 +31,52 @@
                 @endif
                 </div>
             </div>
+            <div class="form-group row mb-4">
+            <label class="col-form-label text-md-right col-12 col-md-2 col-lg-2">Tags</label>
+            <div class="col-sm-12 col-md-10">
+                <select class="form-control selectric" name="negara[]" multiple>
+                    {{--  <option value="">- Pilih Country -</option>  --}}
+                    @foreach ($negara as $data)
+                        <option value="{{ $data->id }}" {{ (in_array($data->id, $select)) ? 'selected' : '' }}>{{ $data->name }}</option>
+                    @endforeach
+                </select>
+
+            @if ($errors->has('negara'))
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $errors->first('negara') }}</strong>
+                </span>
+            @endif
+            </div>
+          </div>
+          <div class="form-group row mb-4">
+            <label class="col-form-label text-md-right col-12 col-md-2 col-lg-2">Tags</label>
+            <div class="col-sm-12 col-md-10">
+                <select class="form-control selectric" name="tag[]" multiple>
+                    {{--  <option value="">- Pilih Genre -</option>  --}}
+                    @foreach ($tag as $data)
+                        <option value="{{ $data->id }}" {{ (in_array($data->id, $select)) ? 'selected' : '' }}>{{ $data->name }}</option>
+                    @endforeach
+                </select>
+
+            @if ($errors->has('tag'))
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $errors->first('tag') }}</strong>
+                </span>
+            @endif
+            </div>
+          </div>
+          <div class="form-group row mb-4">
+            <label class="col-form-label text-md-right col-12 col-md-2 col-lg-2">Year Released</label>
+            <div class="col-sm-12 col-md-10">
+              <select class="form-control selectric" name="rilis">
+                <option value="">-- Pilih Tahun Rilis --</option>
+                @foreach($rilis as $data)
+                    <option value="{{ $data->id }}" {{ ($data->id == $artikel->rilis_id) ? 'selected' : '' }}>{{ $data->nama }}</option>
+                @endforeach
+              </select>
+            </div>
+          </div>
+
           <div class="form-group row mb-4">
             <label class="col-form-label text-md-right col-12 col-md-2 col-lg-2">Category</label>
             <div class="col-sm-12 col-md-10">
@@ -42,6 +88,33 @@
               </select>
             </div>
           </div>
+
+          <div class="form-group row mb-4">
+                <label class="col-form-label text-md-right col-12 col-md-2 col-lg-2">Rating</label>
+                <div class="col-sm-12 col-md-10">
+                    <input name="rating" value="{{ $artikel->rating }}" type="number" step="any" class="form-control{{ $errors->has('rating') ? ' is-invalid' : '' }}">
+
+                @if ($errors->has('rating'))
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $errors->first('rating') }}</strong>
+                    </span>
+                @endif
+                </div>
+            </div>
+
+            <div class="form-group row mb-4">
+                <label class="col-form-label text-md-right col-12 col-md-2 col-lg-2">Duration</label>
+                <div class="col-sm-12 col-md-10">
+                    <input name="durasi" value="{{ $artikel->durasi }}" type="number" class="form-control{{ $errors->has('durasi') ? ' is-invalid' : '' }}">
+
+                @if ($errors->has('durasi'))
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $errors->first('durasi') }}</strong>
+                    </span>
+                @endif
+                </div>
+            </div>
+
           <div class="form-group row mb-12">
             <label class="col-form-label text-md-right col-12 col-md-2 col-lg-2">Content</label>
             <div class="col-sm-12 col-md-10">
@@ -69,23 +142,7 @@
               </div>
             </div>
           </div>
-          <div class="form-group row mb-4">
-            <label class="col-form-label text-md-right col-12 col-md-2 col-lg-2">Tags</label>
-            <div class="col-sm-12 col-md-10">
-                <select class="form-control selectric" name="tag[]" multiple>
-                    {{--  <option value="">- Pilih Tag -</option>  --}}
-                    @foreach ($tag as $data)
-                        <option value="{{ $data->id }}" {{ (in_array($data->id, $select)) ? 'selected' : '' }}>{{ $data->name }}</option>
-                    @endforeach
-                </select>
-
-            @if ($errors->has('tag'))
-                <span class="invalid-feedback" role="alert">
-                    <strong>{{ $errors->first('tag') }}</strong>
-                </span>
-            @endif
-            </div>
-          </div>
+          
           <div class="form-group row mb-4">
             <label class="col-form-label text-md-right col-12 col-md-2 col-lg-2"></label>
             <div class="col-sm-12 col-md-7">
